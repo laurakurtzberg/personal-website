@@ -47,6 +47,21 @@ module.exports = {
                     resolve('node_modules/webpack-dev-server/client'),
                 ],
             },
+            {
+              test: /\.scss$/,
+              use: [
+                'vue-style-loader',
+                'css-loader',
+                'sass-loader'
+              ]
+            },
+            {
+                test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]?[hash]'
+                }
+            }
         ],
     },
     /**
