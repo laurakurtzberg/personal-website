@@ -39,7 +39,7 @@
 
   section#social-media {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     div.social-media-icon {
       width: 22px;
@@ -63,9 +63,9 @@
     justify-content: space-between;
     flex-grow: 1;
     height: 70px;
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
     margin: 0;
-    padding: 10px 20px 10px 20px;
+    padding: 30px;
     background-color: transparent;
     font-size: 14px;
   }

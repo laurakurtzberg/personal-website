@@ -31,7 +31,7 @@
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
     .fade-enter-active, .fade-leave-active {
-      transition: all .5s;
+      transition: transform .5s;
     }
 
     .fade-enter, .fade-leave-to {
@@ -49,8 +49,8 @@
 
       div.menu-icon {
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: 5px;
+        right: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,6 +78,7 @@
       margin-right: 20px;
       background-color: rgba(225,167,215,1);
       text-transform: uppercase;
+      border-radius: 5px;
 
       li {
         padding: 5px;
@@ -85,7 +86,8 @@
       }
 
       li:hover {
-        background-color: grey;
+        font-weight: bold;
+        border-bottom: 2px solid grey;
       }
     }
 </style>
