@@ -1,8 +1,8 @@
 <template>
     <section class="homepage-content">
       <Menu />
-      <h1><span class="top-logo">Laura</span><span class="top-logo">Jael</span></h1>
-
+      <!-- <h1><span class="top-logo">Laura</span><span class="top-logo">Jael</span></h1> -->
+      <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
       <router-view></router-view>
 
       <Footer />
@@ -61,6 +61,12 @@
       color: white;
       background: rgb(89,118,124);
       background: linear-gradient(180deg, rgba(89,118,124,1) 0%, rgba(151,207,220,1) 20%, rgba(196,202,230,1) 40%, rgba(225,167,215,1) 60%, rgba(237,141,202,1) 80%, rgba(211,160,191,1) 100%);
+
+      .name-logo {
+        padding: 20px;
+        max-width: 200px;
+        z-index: 100;
+      }
 
       h1 {
         font-size: 55px;

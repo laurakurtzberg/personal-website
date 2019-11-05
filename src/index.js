@@ -17,7 +17,6 @@ import AboutMe from './views/about-me';
 import ISMP from './views/ismp';
 import SlideCollection from './views/slide-collection';
 
-
 // My routes
 const routes = [
   { path: '/', component: SlideCollection },

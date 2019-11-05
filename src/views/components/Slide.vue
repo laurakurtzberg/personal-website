@@ -11,12 +11,19 @@
     export default {
         name: "Slide",
         data: () => ({
-            slideTitle: 'My Project'
+            slideTitle: 'My Project',
+            rotation: '20deg'
         }),
+        computed: () => ({
+          rotation: this.rotation
+        })
     }
 </script>
 
 <style lang="scss">
+    .rotated {
+      transform: rotateY(rotation);
+    }
     img.backgroundimg {
       z-index: 0;
       align-self: center;
@@ -29,8 +36,8 @@
 
     div.slide {
       overflow: hidden;
-      height: calc(100vh - 300px);
-      width: calc(100% - 60px);
+      height: 300px;
+      width: 300px;
       background-color: white;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       border: 2px solid white;

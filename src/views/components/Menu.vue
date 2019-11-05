@@ -22,7 +22,7 @@
             MenuLinks: [
               {name: 'Home', linkTo: '/'},
               {name: 'About Me', linkTo: '/about'},
-              {name: 'ISMPs', linkTo: '/ismp'}
+              {name: 'ISMPs', linkTo: '/ismp'} // ISMP stands for imperfect small monthly prototype
             ]
         }),
     }

@@ -2,48 +2,13 @@
   <div>
     <section class="slide-collection">
       <div class="left arrow-container"><font-awesome-icon icon="angle-left" /></div>
-      <Slide />
+      <!-- could just do something like style="text-decoration: underline" -->
+      <Slide rotate={0} />
+      <Slide rotate={20} />
+      <Slide rotate={-20} />
       <div class="right arrow-container"><font-awesome-icon icon="angle-right" /></div>
     </section>
-    <div class="slides">
-      <transition-group
-        name="slide"
-        mode="out-in"
-        enter-class="slide-in"
-        leave-class="slide-out"
-        enter-active-class="animated slide-in-active"
-        leave-active-class="animated slide-out-active"
-      >
-        <div
-          v-for="index in slides"
-          v-if="index == active"
-          :key="index"
-        >
-          Slide {{ index }}
-        </div>
-      </transition-group>
-    </div>
-    <span
-      class="prev"
-      @click="move(-1)"
-    >
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </span>
-    <span
-      class="next"
-      @click="move(1)"
-    >
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </span>
-    <ul class="dots">
-      <li
-        v-for="(dot, index) in slides"
-        :class="{ active: ++index === active }"
-        @click="jump(index)"
-      ></li>
-    </ul>
   </div>
-</div>
 </template>
 
 <script>
