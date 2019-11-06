@@ -1,12 +1,12 @@
 <template>
   <div>
     <section class="slide-collection">
-      <div class="left arrow-container"><font-awesome-icon icon="angle-left" /></div>
-      <!-- could just do something like style="text-decoration: underline" -->
-      <Slide rotate={0} />
-      <Slide rotate={20} />
-      <Slide rotate={-20} />
-      <div class="right arrow-container"><font-awesome-icon icon="angle-right" /></div>
+      <div class="slide-collection-content">
+        <!-- could just do something like style="text-decoration: underline" -->
+        <Slide rotate='0deg' />
+        <Slide rotate='0deg' />
+        <Slide rotate='50deg' />
+      </div>
     </section>
   </div>
 </template>
@@ -46,11 +46,25 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+    div.slide-collection-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: translateZ(-182px) rotateY(0);
+      animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    }
+
     section.slide-collection {
       color: #232323;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    width: 190px;
+	    height: 210px;
+	    margin: 0;
+	    perspective: 800px;
+	    transform: translate(-50%, -50%);
       font-family: 'Karla', sans-serif;
 
       h1, h2, h3 {
@@ -114,31 +128,6 @@
       text-indent: 2px;
     }
 
-    .dots {
-      position: fixed;
-      display: block;
-      width: 100%;
-      text-align: center;
-      bottom: 20px;
-
-      li {
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
-        background: #232323;
-        opacity: 0.2;
-        display: inline-block;
-        margin: 0 3px;
-        cursor: pointer;
-        transition: opacity 0.4s ease-in-out,width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-        &.active {
-          width: 22px;
-          opacity: 1;
-        }
-      }
-    }
-
     .slides {
       font-size: 40px;
       display: flex;
@@ -200,6 +189,20 @@
       &:disabled {
         opacity: 0.2;
         cursor: no-drop;
+      }
+    }
+    @keyframes
+    carousel {  0%, 17.5% {
+       transform: translateZ(-182px) rotateY(0);
+      }
+       27.5%, 45% {
+       transform: translateZ(-182px) rotateY(-120deg);
+      }
+       55%, 72.5% {
+       transform: translateZ(-182px) rotateY(-240deg);
+      }
+       82.5%, 100% {
+       transform: translateZ(-182px) rotateY(-360deg);
       }
     }
 </style>
