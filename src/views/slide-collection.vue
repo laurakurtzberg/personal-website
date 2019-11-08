@@ -6,6 +6,9 @@
         <Slide rotate='0deg' />
         <Slide rotate='0deg' />
         <Slide rotate='50deg' />
+        <Slide rotate='50deg' />
+        <Slide rotate='50deg' />
+        <Slide rotate='50deg' />
       </div>
     </section>
   </div>
@@ -51,7 +54,7 @@
       width: 100%;
       height: 100%;
       transform-style: preserve-3d;
-      transform: translateZ(-182px) rotateY(0);
+      transform: translateZ(-282px) rotateY(0);
       animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
     }
 
@@ -60,7 +63,7 @@
       position: absolute;
 	    top: 50%;
 	    left: 50%;
-	    width: 190px;
+	    width: 250px;
 	    height: 210px;
 	    margin: 0;
 	    perspective: 800px;
@@ -192,7 +195,8 @@
       }
     }
     @keyframes
-    carousel {  0%, 17.5% {
+    carousel {
+      0%, 17.5% {
        transform: translateZ(-182px) rotateY(0);
       }
        27.5%, 45% {

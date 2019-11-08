@@ -44,7 +44,7 @@
       position: absolute;
 	    top: 0;
 	    left: 0;
-	    width: 190px;
+	    width: 250px;
 	    height: 210px;
 	    border-radius: 6px;
       // overflow: hidden;
@@ -61,17 +61,32 @@
 
     div.slide:nth-child(1) {
        background: rgba(252, 192, 77, 0.9);
-       transform: rotateY(0) translateZ(182px);
+       transform: rotateY(0) translateZ(282px);
     }
 
     div.slide:nth-child(2) {
        background: rgba(49, 192, 204, 0.9);
-       transform: rotateY(120deg) translateZ(182px);
+       transform: rotateY(60deg) translateZ(282px);
     }
 
     div.slide:nth-child(3) {
+       background: rgba(49, 192, 204, 0.9);
+       transform: rotateY(120deg) translateZ(282px);
+    }
+
+    div.slide:nth-child(4) {
        background: rgba(236, 233, 242, 0.9);
-       transform: rotateY(240deg) translateZ(182px);
+       transform: rotateY(180deg) translateZ(282px);
+    }
+
+    div.slide:nth-child(5) {
+       background: rgba(236, 233, 242, 0.9);
+       transform: rotateY(240deg) translateZ(282px);
+    }
+
+    div.slide:nth-child(6) {
+       background: rgba(236, 233, 242, 0.9);
+       transform: rotateY(300deg) translateZ(282px);
     }
 
     h2 {
