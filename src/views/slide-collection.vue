@@ -1,16 +1,17 @@
 <template>
   <div>
+    <div class="left arrow-container"><font-awesome-icon icon="angle-left" /></div>
     <section class="slide-collection">
       <div class="slide-collection-content">
-        <!-- could just do something like style="text-decoration: underline" -->
-        <Slide rotate='0deg' />
-        <Slide rotate='0deg' />
-        <Slide rotate='50deg' />
-        <Slide rotate='50deg' />
-        <Slide rotate='50deg' />
-        <Slide rotate='50deg' />
+        <Slide />
+        <Slide />
+        <Slide />
+        <Slide />
+        <Slide />
+        <Slide />
       </div>
     </section>
+    <div class="right arrow-container"><font-awesome-icon icon="angle-right" /></div>
   </div>
 </template>
 
@@ -24,7 +25,8 @@
         },
         methods: {
           move(amount) {
-            let newActive
+            let newActive;
+            let rotation;
             const newIndex = this.active + amount;
             if (newIndex > this.slides) newActive = 1;
             if (newIndex === 0) newActive = this.slides;
@@ -194,6 +196,15 @@
         cursor: no-drop;
       }
     }
+    // instead of using an animation with keyframes,
+    // I can use one class for transform rotate 'forward' and
+    // one class for transform rotate 'backwards'
+    //
+    // but then what about rotating in one direction AGAIN??
+    // the class has already been assigned
+    //
+    // could have yet ANOTHER class name with the same animation
+    // and switch between assigned .animation1 and .animation2
     @keyframes
     carousel {
       0%, 17.5% {

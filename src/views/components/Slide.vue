@@ -12,18 +12,7 @@
         name: "Slide",
         data: () => ({
             slideTitle: 'My Project'
-        }),
-        props: {
-          rotate: {
-            type: String
-          }
-        },
-        computed: {
-          style () {
-            return ' color: blue ';
-            // return 'transform: skew(10deg) rotateY(' + this.rotate  + ')';
-          }
-        }
+        })
     }
 </script>
 
@@ -45,18 +34,8 @@
 	    top: 0;
 	    left: 0;
 	    width: 250px;
-	    height: 210px;
+	    height: 250px;
 	    border-radius: 6px;
-      // overflow: hidden;
-      // height: 300px;
-      // width: 300px;
-      // background-color: white;
-      // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      // border: 2px solid white;
-      // padding: 0px;
-      // border-radius: 5px;
-      // display: flex;
-      // justify-content: center;
     }
 
     div.slide:nth-child(1) {
