@@ -2,7 +2,12 @@
   <div>
     <div class="left arrow-container"><font-awesome-icon icon="angle-left" /></div>
     <section class="slide-collection">
-      <div class="slide-collection-content">
+      <div
+        class="slide-collection-content"
+        v-bind:class="{ active: false, second: secondActive }"
+        v-on:click="increaseTurn"
+        v-bind:style="{ transform: 'rotateY('+ turn+'deg)' }"
+      >
         <Slide />
         <Slide />
         <Slide />
@@ -19,33 +24,20 @@
     import Slide from './components/Slide';
 
     export default {
-        data: {
-          slides: 3,
-          active: 1
-        },
         methods: {
-          move(amount) {
-            let newActive;
-            let rotation;
-            const newIndex = this.active + amount;
-            if (newIndex > this.slides) newActive = 1;
-            if (newIndex === 0) newActive = this.slides;
-            this.active = newActive || newIndex;
-          },
-          jump(index) {
-            this.active = index;
-          },
-          addSlide() {
-            this.slides = this.slides + 1;
-          },
-          removeSlide() {
-            this.slides = this.slides - 1;
+          increaseTurn() {
+            this.turn += 20;
           }
         },
         components: {
           Slide
         },
-        name: "SlideCollection"
+        name: "SlideCollection",
+        data: () => ({
+          isActive: true,
+          secondActive: false,
+          turn: 0.5
+        })
     }
 </script>
 
@@ -56,8 +48,19 @@
       width: 100%;
       height: 100%;
       transform-style: preserve-3d;
-      transform: translateZ(-282px) rotateY(0);
-      animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+      transition: all 2s;
+      // transform: translateZ(-282px) rotateY(0);
+      // animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    }
+
+    div.slide-collection-content.active {
+      animation: carousel_spin_right2 2s cubic-bezier(1, 0.015, 0.295, 1.225);
+      animation-fill-mode: forwards;
+    }
+
+    div.slide-collection-content.secondActive {
+      animation: carousel_spin_right 2s cubic-bezier(1, 0.015, 0.295, 1.225);
+      animation-fill-mode: forwards;
     }
 
     section.slide-collection {
@@ -218,6 +221,20 @@
       }
        82.5%, 100% {
        transform: translateZ(-182px) rotateY(-360deg);
+      }
+    }
+
+    @keyframes
+    carousel_spin_right {
+      0%, 50% {
+        transform: rotateY(-120deg);
+      }
+    }
+
+    @keyframes
+    carousel_spin_right2 {
+      0%, 50% {
+        transform: rotateY(-240deg);
       }
     }
 </style>
