@@ -1,11 +1,15 @@
 <template>
   <div>
-    <div class="left arrow-container"><font-awesome-icon icon="angle-left" /></div>
+    <div
+      class="left arrow-container"
+      v-on:click="increaseTurn"
+    >
+        <font-awesome-icon icon="angle-left" />
+    </div>
     <section class="slide-collection">
       <div
         class="slide-collection-content"
         v-bind:class="{ active: false, second: secondActive }"
-        v-on:click="increaseTurn"
         v-bind:style="{ transform: 'rotateY('+ turn+'deg)' }"
       >
         <Slide />
@@ -16,7 +20,7 @@
         <Slide />
       </div>
     </section>
-    <div class="right arrow-container"><font-awesome-icon icon="angle-right" /></div>
+    <div class="right arrow-container" v-on:click="decreaseTurn"><font-awesome-icon icon="angle-right" /></div>
   </div>
 </template>
 
@@ -26,7 +30,10 @@
     export default {
         methods: {
           increaseTurn() {
-            this.turn += 20;
+            this.turn += 60;
+          },
+          decreaseTurn() {
+            this.turn -= 60;
           }
         },
         components: {
@@ -36,7 +43,7 @@
         data: () => ({
           isActive: true,
           secondActive: false,
-          turn: 0.5
+          turn: 0
         })
     }
 </script>
