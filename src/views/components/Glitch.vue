@@ -1,0 +1,109 @@
+<template>
+  <svg data-name="Layer 1" viewBox="0 0 49.13 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+  <clipPath id="h">
+  <path class="cls-1" d="M37.3,16a16.66,16.66,0,0,0,3.4-1.36c1.16-.56,4.88-4.54,5.44-7.15,0,0-2.57.54-2.8.06S45.3,5,45.3,5s-.68-2.4-4.55-3.25-6.48-.88-8.9.14-3.21,1.4-3.21,1.4S25.22,1.44,24.14,2c-.54.26-7.62,5.79-7.76,7.23a3.16,3.16,0,0,1-.74,2c-.22.44-.1.12-1.51,1.24-3.53,2.82-2.82,2.91-5.5,4.88-1.09.8-7.87.73-8.26,1.24-.18.24.77,2.67,2.45,3.75s.61,3.17,2.3,4.72.75,3.77,1.42,4.25,5.12-5.11,6.24-5.41a64,64,0,0,0,11.71-2.38,30.09,30.09,0,0,0,6.67-3.12,4.46,4.46,0,0,0,.59,2.28,8.83,8.83,0,0,0,3.6-1.88C37.34,19.18,37.31,16.33,37.3,16Z"/>
+  </clipPath>
+  <clipPath id="f">
+  <rect class="cls-2" transform="translate(-6.51 14.03) rotate(-25.87)" x="3.99" y="-2.12" width="46.61" height="46.61"/>
+  </clipPath>
+  <clipPath id="e">
+  <path class="cls-2" d="M32.11,5.49l0,.08c0,.07,0,.16,0,.26a8.11,8.11,0,0,0-.1.9,5.08,5.08,0,0,0,.23,2,4.61,4.61,0,0,0,.56,1,10.72,10.72,0,0,0,1,1.16c.22.24.45.46.66.66l.2.18.07.06a.6.6,0,0,1,.13.78.47.47,0,0,1-.71.06l-.31-.28c-.23-.22-.47-.45-.71-.71A11.93,11.93,0,0,1,32,10.36,5.83,5.83,0,0,1,31.24,9a6.24,6.24,0,0,1-.31-2.49,9.24,9.24,0,0,1,.11-1c0-.19.06-.34.08-.42a.46.46,0,0,1,.62-.33A.62.62,0,0,1,32.11,5.49Z"/>
+  </clipPath>
+  <clipPath id="d">
+  <path class="cls-2" d="M27.93,7.41l-2,1.13-.65.36-1.45.82a54.55,54.55,0,0,0-5.06,3.44A40.5,40.5,0,0,0,11.87,20L11,21.13a.48.48,0,0,1-.72,0,.59.59,0,0,1-.07-.78l.92-1.1a41.31,41.31,0,0,1,7-7,55.34,55.34,0,0,1,5.16-3.5l1.46-.83.65-.36,2-1.13L28.07,6l.19-.1.07,0a.56.56,0,0,1,.78.54v.1c0,.09,0,.19,0,.3,0,.32.05.66.1,1a11.32,11.32,0,0,0,.31,1.57c0,.18.1.34.16.5a8.74,8.74,0,0,0,1.29,2c.24.3.49.61.76.92s.67.76,1,1.11l.31.33.08.09,0,0a.59.59,0,0,1,.06.78.48.48,0,0,1-.72,0l0,0L32.38,15l-.32-.34c-.34-.36-.69-.75-1-1.15s-.55-.65-.8-1a9.57,9.57,0,0,1-1.49-2.34q-.1-.28-.19-.6a12.52,12.52,0,0,1-.34-1.74c0-.21-.05-.42-.07-.62Z"/>
+  </clipPath>
+  <clipPath id="c">
+  <ellipse class="cls-2" transform="translate(1.19 17.44) rotate(-25.87)" cx="38.57" cy="6.14" rx="2.18" ry="2.26"/>
+  </clipPath>
+  <clipPath id="b">
+  <rect class="cls-2" transform="translate(-6.25 13.82) rotate(-25.87)" x="3.66" y="-.78" width="46.61" height="42.57"/>
+  </clipPath>
+  <clipPath id="a">
+  <path class="cls-1" d="m40.54 5.21a2.18 2.18 0 1 0-1 3 2.2 2.2 0 0 0 1.11-2.62 1.67 1.67 0 0 1-3.12 1.11 1.68 1.68 0 1 1 3-1.48z"/>
+  </clipPath>
+  <clipPath id="g">
+  <ellipse class="cls-2" transform="translate(1.27 17.95) rotate(-25.87)" cx="39.72" cy="6.21" rx=".45" ry=".47"/>
+  </clipPath>
+  </defs>
+  <g class="cls-3">
+  <g class="cls-4">
+  <rect class="cls-5" transform="translate(-3.84 11.89) rotate(-25.87)" x="-.07" y="2.53" width="48.09" height="23.56"/>
+  </g>
+  </g>
+  <g class="cls-6">
+  <g class="cls-4">
+  <rect class="cls-7" transform="translate(-.65 15.11) rotate(-25.87)" x="30.57" y="3.94" width="4" height="10.05"/>
+  </g>
+  </g>
+  <g class="cls-8">
+  <g class="cls-4">
+  <rect class="cls-7" transform="translate(-4.7 10.54) rotate(-25.87)" x="8.03" y="9.48" width="25.13" height="12.03"/>
+  </g>
+  </g>
+  <g class="cls-9">
+  <g class="cls-10">
+  <rect class="cls-11" transform="translate(1.19 17.44) rotate(-25.87)" x="35.64" y="3.2" width="5.86" height="5.89"/>
+  </g>
+  </g>
+  <g class="cls-12">
+  <g class="cls-10">
+  <rect class="cls-7" transform="translate(1.19 17.44) rotate(-25.87)" x="35.64" y="3.2" width="5.86" height="5.89"/>
+  </g>
+  </g>
+  <g class="cls-13">
+  <g class="cls-10">
+  <rect class="cls-7" transform="translate(1.27 17.95) rotate(-25.87)" x="38.51" y="5.06" width="2.41" height="2.31"/>
+  </g>
+  </g>
+  </svg>
+
+</template>
+
+<script>
+    export default {
+        name: "Glitch",
+    }
+</script>
+
+<style>
+  .cls-1,.cls-2{
+     fill:none;
+  }
+  .cls-1{
+     clip-rule:evenodd;
+  }
+  .cls-3{
+     clip-path:url(#h);
+  }
+  .cls-4{
+     clip-path:url(#f);
+  }
+  .cls-5{
+     fill:#232323;
+  }
+  .cls-6{
+     clip-path:url(#e);
+  }
+  .cls-7{
+     fill:#fff;
+  }
+  .cls-8{
+     clip-path:url(#d);
+  }
+  .cls-9{
+     clip-path:url(#c);
+  }
+  .cls-10{
+     clip-path:url(#b);
+  }
+  .cls-11{
+     fill:#3652d3;
+  }
+  .cls-12{
+     clip-path:url(#a);
+  }
+  .cls-13{
+     clip-path:url(#g);
+  }
+</style>

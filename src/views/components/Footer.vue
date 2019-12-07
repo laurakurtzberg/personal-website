@@ -8,14 +8,17 @@
         </li>
       </ul>
       <section id="social-media">
-        <div class="social-media-icon"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/></div>
-        <div class="social-media-icon"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }"/></div>
-        <div class="social-media-icon"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/></div>
+        <button class="social-media-icon" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/></button>
+        <button class="social-media-icon" title="LinkedIn"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }"/></button>
+        <button class="social-media-icon" title="Github"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/></button>
+        <button class="social-media-icon" title="Glitch"><Glitch /></button>
       </section>
     </footer>
 </template>
 
 <script>
+    import Glitch from './Glitch';
+
     export default {
         name: "Footer",
         data: () => ({
@@ -25,6 +28,9 @@
             {name: 'ISMPs', linkTo: '/ismp'}
           ]
         }),
+        components: {
+          Glitch
+        },
     }
 </script>
 
@@ -35,29 +41,46 @@
     list-style: none;
     padding: 0;
     text-align: left;
+
+    li {
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        color: black;
+      }
+    }
   }
 
   section#social-media {
     display: flex;
     flex-direction: row-reverse;
 
-    div.social-media-icon {
-      width: 22px;
-      height: 22px;
-      background-color: #fff;
-      border-radius: 10px;
+    button.social-media-icon {
+      width: 31px;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
       margin: 5px;
+      padding: 0;
+      transition: all 0.2s ease-out;
 
       svg {
-        width: 16px;
-        height: 16px;
-        padding: 3px;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
         color: #232323;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.6);
       }
     }
   }
 
   footer.global-footer {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,6 +90,6 @@
     margin: 0;
     padding: 30px;
     background-color: transparent;
-    font-size: 14px;
+    font-size: 1em;
   }
 </style>

@@ -3,8 +3,11 @@ import VueRouter from 'vue-router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faTimes, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Vue2TouchEvents from 'vue2-touch-events'
+
+Vue.use(Vue2TouchEvents);
 Vue.use(VueRouter);
 library.add(faBars, faTimes, faAngleLeft, faAngleRight, faTwitter, faLinkedin, faGithub);
 Vue.component('font-awesome-icon', FontAwesomeIcon);

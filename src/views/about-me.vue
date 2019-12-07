@@ -4,16 +4,20 @@
         <h2>Hey!</h2>
         My name is Laura, and I make online things
         with data, art, and cartography. I have experience in journalism, science communication,
-        interactive experiences, and web development.
+        interactive media, and web development.
         <br>
         <br>
-        I grew up in Arizona and Sonora before moving to Miami to pursue an MFA in Interactive Media.
-        Nowadays I live in Santa Fe, NM where I work as a front end developer at Descartes Labs.
-        <div class="contact">
-          <a href="mailto:laura.kurtzberg@gmail.com">Contact Me</a>
-        </div>
+        I grew up in Arizona and Sonora before moving to Miami to pursue an
+        <a href="https://interactive.miami.edu/">MFA in Interactive Media</a> at the University of Miami.
+        Nowadays I live in Santa Fe, NM where I work as a front end developer at
+        <a href="Descarteslabs.com">Descartes Labs</a>.
+        <a href="mailto:laura.kurtzberg@gmail.com">
+          <button class="contact">
+            Contact Me
+          </button>
+        </a>
       </div>
-      <img class="my-portrait" src="images/lk-pic.jpg" alt="portrait of Laura" />
+      <img class="my-portrait" src="images/pic-small.jpg" alt="portrait of Laura" />
     </div>
 </template>
 
@@ -42,7 +46,9 @@
       flex-direction: row;
       font-family: 'Karla';
       padding: 20px;
-      border-radius: 5px;
+      border-radius: 8px;
+      position: relative;
+      z-index: 1000;
 
       h2 {
         font-family: 'Rubik', sans-serif;
@@ -58,24 +64,33 @@
     }
 
     img.my-portrait {
-      flex-grow: 0;
-      width: 300px;
+      min-width: 300px;
       height: 300px;
       margin: 20px;
       border-radius: 150px;
       border: 2px solid white;
     }
 
-    div.contact {
+    a {
+      text-decoration: none;
+    }
+
+    button.contact {
       padding: 15px;
       margin: 20px 0px 20px 0px;
       background-color: white;
-      width: 100px;
+      color: black;
+      font-size: 1em;
+      font-weight: bold;
+      min-width: 100px;
       text-align: center;
       border-radius: 5px;
+      display: block;
+      cursor: pointer;
+      outline: none;
 
-      a {
-        text-decoration: none;
+      &:hover {
+        background-color: rbga(255, 255, 255, 0.5);
       }
     }
 

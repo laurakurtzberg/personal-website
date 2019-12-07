@@ -5,17 +5,20 @@
       <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
       <router-view></router-view>
 
+      <Grid />
       <Footer />
     </section>
 </template>
 
 <script>
     import Menu from './components/Menu';
+    import Grid from './components/Grid';
     import Footer from './components/Footer';
 
     export default {
         components: {
           Menu,
+          Grid,
           Footer
         },
         name: "main-content",

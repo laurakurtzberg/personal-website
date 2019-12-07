@@ -18,9 +18,10 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "hopper": "^0.2.0",
     "i": "^0.3.6",
-    "npm": "^6.9.0",
+    "npm": "^6.13.2",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.6"
+    "vue-router": "^3.0.6",
+    "vue2-touch-events": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
