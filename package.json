@@ -12,6 +12,7 @@
   "author": "Dushyant Sabharwal",
   "license": "MIT",
   "dependencies": {
+    "@chenfengyuan/vue-carousel": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
@@ -19,7 +20,7 @@
     "hopper": "^0.2.0",
     "i": "^0.3.6",
     "npm": "^6.13.2",
-    "vue": "^2.5.16",
+    "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vue2-touch-events": "^2.0.1"
   },
@@ -35,7 +36,7 @@
     "ttf-loader": "^1.0.2",
     "vue-loader": "^14.2.2",
     "vue-style-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.16",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.2",
     "webpack-dev-server": "^3.1.1"

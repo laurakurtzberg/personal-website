@@ -1,0 +1,169 @@
+<template>
+    <main class="project-page">
+      <div class="featured-image"></div>
+      <section class="description">
+        <header>
+          <h1 class="project-title">Floresta Silenciosa</h1>
+          <p class="project-subtitle">Visualizations to Describe the Silent Degredation of the Amazon</p>
+          <a href="http://florestasilenciosa.ambiental.media/en/">
+            <button class="project-button">
+              Check It Out
+            </button>
+            </a>
+        </header>
+        <p>
+          Floresta Silenciosa is one of the first projects I undertook with
+          Ambiental Media, an independant environmental journalism startup out of Brazil.
+          As part of an international team of journalists, scientists, photographers,
+          designers, and engineers, my responsibility was to map the data that describes
+          degredation and deforestation in the Amazon rainforest.
+        </p>
+      </section>
+      <section class="tools-used">
+        <p>
+          <span>Tools Used:</span> Leaflet, DJ.js, Mapbox.js, Mapbox Studio, R Studio
+        </p>
+      </section>
+      <section class="image-carousel">
+        <carousel :data="images" :controls="false" indicator-type="disc"></carousel>
+      </section>
+      <section class="conclusion">
+        <p>this is a test to see about scroll</p>
+      </section>
+    </main>
+</template>
+
+<script>
+    export default {
+        name: "FlorestaSilenciosa",
+        data: () => ({
+            title: 'Floresta Silenciosa',
+            images: [
+              `<div class="carousel-slide">
+                <img
+                  src="images/floresta-para.gif"
+                  alt="Map of degradation in the entire Amazon region"
+                />
+               </div>`,
+              `<div class="carousel-slide">
+                <img
+                  src="images/Floresta-Silenciosa.jpg"
+                  alt="hexagon map of degradation in the Brazilian state of Pará"
+                />
+               </div>`,
+              `<div class="carousel-slide">
+                <img
+                  src="images/conservation-value.png"
+                  alt="Scientists calculated conservation values in the Brazilian state of Pará"
+                />
+               </div>`,
+            ]
+        }),
+    }
+</script>
+
+<style lang="scss">
+    @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+
+    $darkgrey: #232323;
+
+    main.project-page {
+      margin: auto;
+      height: 65vh;
+      min-height: 600px;
+      margin-top: 50px;
+      width: 80%;
+      max-width: 1000px;
+      background-color: rgba(255,255,255,0.8);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      color: black;
+      text-align: left;
+      font-family: 'Karla';
+      border-radius: 8px;
+      position: relative;
+      z-index: 1000;
+      overflow-y: scroll;
+
+      section {
+        width: 90%;
+        height: auto;
+        color: black;
+        text-align: left;
+        margin: auto;
+        padding: 20px;
+        padding-left: 25px;
+      }
+
+      section.image-carousel {
+        height: 400px;
+        background: #ccc;
+
+        div.carousel-slide {
+          height: 400px;
+          text-align: center;
+
+          img {
+            height: 350px;
+          }
+        }
+      }
+
+      section.description {
+        header {
+          position: relative;
+
+          h1.project-title {
+            margin-bottom: 0;
+          }
+
+          p.project-subtitle {
+            margin-top: 0px;
+            margin-bottom: 35px;
+            font-style: italic;
+          }
+
+          button.project-button {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            width: 150px;
+            padding: 15px;
+            outline: none;
+            border: 3px solid $darkgrey;
+            border-radius: 6px;
+            font-weight: bold;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+
+            &:focus {
+              outline: none;
+              border-color: white;
+            }
+
+            &:hover {
+              outline: none;
+              border-color: #ccc;
+              background: white;
+            }
+          }
+        }
+      }
+    }
+
+    div.featured-image {
+      min-width: 100%;
+      padding: 0;
+      margin: 0;
+      height: 400px;
+      background: grey;
+      background-image: url('~/images/Floresta-Silenciosa.jpg');
+      background-position: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+</style>

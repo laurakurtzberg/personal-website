@@ -53,6 +53,14 @@
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+    main {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
 
     div.slide-collection-content {
       position: absolute;
