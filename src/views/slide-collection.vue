@@ -44,9 +44,18 @@
         },
         name: "SlideCollection",
         data: () => ({
-          isActive: true,
-          secondActive: false,
-          turn: 0
+          turn: 0,
+          data: () => ({
+              isHidden: true,
+              Projects: [
+                {name: 'Plant Friend', linkTo: '/plantfriend'},
+                {name: 'Airline Fuel Cost', linkTo: '/airlinefuel'},
+                {name: 'Floresta Silenciosa', linkTo: '/floresta'},
+                {name: 'CARTHE Map', linkTo: '/carthe'},
+                {name: 'Fires in the Amazon', linkTo: '/amazonfires'},
+                {name: 'Social Progress Index', linkTo: '/socialprogress'},
+              ]
+          }),
         })
     }
 </script>
@@ -54,13 +63,14 @@
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
 
-    div.slide-collection-content {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: all 2s;
-      transition-timing-function: cubic-bezier(0.6, -0.1, 0.735, 0.045);
+    @media only screen and (max-width: 1000px) {
+      button.left {
+        margin-left: 25px;
+      }
+
+      button.right {
+        margin-right: 25px;
+      }
     }
 
     section.slide-collection {
@@ -82,6 +92,15 @@
       }
     }
 
+    div.slide-collection-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 2s;
+      transition-timing-function: cubic-bezier(0.6, -0.1, 0.735, 0.045);
+    }
+
     button.arrow-container {
       position: absolute;
       top: 50%;
@@ -91,6 +110,7 @@
       padding: 0;
       border-radius: 15px;
       transition: all 0.5s ease-out;
+      outline: none;
 
       svg {
         fill: #232323;
@@ -106,13 +126,13 @@
     .left {
       margin-right: -28px;
       left: 0;
-      margin-left: 25px;
+      margin-left: calc(50% - 400px);
     }
 
     .right {
       margin-left: -28px;
       right: 0;
-      margin-right: 25px;
+      margin-right: calc(50% - 400px);
     }
 
     .slides {

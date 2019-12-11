@@ -8,10 +8,26 @@
         </li>
       </ul>
       <section id="social-media">
-        <button class="social-media-icon" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/></button>
-        <button class="social-media-icon" title="LinkedIn"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }"/></button>
-        <button class="social-media-icon" title="Github"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/></button>
-        <button class="social-media-icon" title="Glitch"><Glitch /></button>
+        <a href="https://twitter.com/laurakurtzberg">
+          <button class="social-media-icon" title="Twitter">
+            <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/>
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/laurajael/">
+          <button class="social-media-icon" title="LinkedIn">
+            <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }"/>
+          </button>
+        </a>
+        <a href="https://github.com/laurakurtzberg">
+          <button class="social-media-icon" title="Github">
+            <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/>
+          </button>
+        </a>
+        <a href="#">
+          <button class="social-media-icon" title="Glitch">
+            <Glitch />
+          </button>
+        </a>
       </section>
     </footer>
 </template>
@@ -40,6 +56,7 @@
     font-family: 'Karla', sans-serif;
     list-style: none;
     padding: 0;
+    margin: 0;
     text-align: left;
 
     li {
@@ -60,6 +77,7 @@
       width: 31px;
       height: 30px;
       background-color: rgba(255, 255, 255, 0.9);
+      border: none;
       border-radius: 15px;
       margin: 5px;
       padding: 0;
@@ -85,11 +103,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
-    height: 70px;
+    height: 85px;
     width: calc(100% - 60px);
     margin: 0;
     padding: 30px;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 </style>

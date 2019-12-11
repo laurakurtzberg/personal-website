@@ -1,7 +1,7 @@
 <template>
-    <div class="about-me">
+    <section class="about-me">
       <div class="bio">
-        <h2>Hey!</h2>
+        <h2>Hey there!</h2>
         My name is Laura, and I make online things
         with data, art, and cartography. I have experience in journalism, science communication,
         interactive media, and web development.
@@ -11,14 +11,9 @@
         <a href="https://interactive.miami.edu/">MFA in Interactive Media</a> at the University of Miami.
         Nowadays I live in Santa Fe, NM where I work as a front end developer at
         <a href="Descarteslabs.com">Descartes Labs</a>.
-        <a href="mailto:laura.kurtzberg@gmail.com">
-          <button class="contact">
-            Contact Me
-          </button>
-        </a>
       </div>
       <img class="my-portrait" src="images/pic-small.jpg" alt="portrait of Laura" />
-    </div>
+    </section>
 </template>
 
 <script>
@@ -32,9 +27,10 @@
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
-    div.about-me {
+
+    section.about-me {
       margin: auto;
-      height: calc(100% - 500px);
+      height: auto;
       margin-top: 50px;
       width: 60%;
       max-width: 800px;
@@ -94,13 +90,14 @@
       }
     }
 
-    @media only screen and (max-width: 900px) {
-      div.about-me {
+    @media only screen and (max-width: 1000px) {
+      section.about-me {
         padding-top: 50px;
+        padding-bottom: 40px;
         width: 80%;
         flex-direction: column;
         justify-content: center;
-        margin-top: 180px;
+        margin-top: 140px;
       }
 
       div.bio {
@@ -109,13 +106,13 @@
 
       img.my-portrait {
         display: block;
-        width: 200px;
+        min-width: 200px;
         height: 200px;
         border-radius: 100px;
         position: absolute;
         left: 50%;
         margin-left: -100px;
-        top: 180px;
+        top: -150px;
       }
 
     }

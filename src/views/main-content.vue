@@ -1,8 +1,8 @@
 <template>
     <section class="homepage-content">
-      <Menu />
-      <!-- <h1><span class="top-logo">Laura</span><span class="top-logo">Jael</span></h1> -->
       <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
+
+      <Menu />
       <router-view></router-view>
 
       <Grid />

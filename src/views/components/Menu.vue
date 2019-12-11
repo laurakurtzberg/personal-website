@@ -1,9 +1,10 @@
 <template>
     <div class="menu-wrapper">
-      <div class="menu-icon" v-show="isHidden" v-on:click="isHidden = !isHidden"><font-awesome-icon icon="bars" /></div>
-      <div class="menu-icon" v-show="!isHidden" v-on:click="isHidden = !isHidden"><font-awesome-icon icon="times" /></div>
+      <div class="menu-icon" v-show="isHidden" v-on:click="isHidden = false">
+        <font-awesome-icon icon="bars" />
+      </div>
       <transition name="fade">
-        <ul id="main-menu" v-if="!isHidden">
+        <ul id="main-menu" v-show="!isHidden" v-on:click="isHidden = true">
           <li v-for="item in MenuLinks">
             <router-link class="menu-link" tag="div" :to="item.linkTo">
               {{ item.name }}
@@ -31,12 +32,12 @@
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
     .fade-enter-active, .fade-leave-active {
-      transition: transform .5s;
+      transition: transform 0.5s;
     }
 
     .fade-enter, .fade-leave-to {
       opacity: 0;
-      transform: scaleY(0);
+      transform: scaleX(0);
     }
 
     div.menu-wrapper {
@@ -61,8 +62,8 @@
         margin: 8px;
 
         svg {
-          width: 15px;
-          height: 15px;
+          width: 20px;
+          height: 20px;
         }
       }
     }
@@ -71,23 +72,24 @@
       list-style: none;
       transform-origin: top right;
       padding: 0;
-      width: 100px;
-      height: 80px;
+      width: 120px;
       padding: 20px;
       margin-top: 15px;
-      margin-right: 20px;
+      margin-right: 0px;
       background-color: rgba(225,167,215,1);
       text-transform: uppercase;
-      border-radius: 5px;
+      border-radius: 8px;
 
       li {
-        padding: 5px;
-        font-size: 14px;
+        padding: 10px;
+        font-size: 1.1em;
+        transition: all 0.2s ease-out;
+        text-align: center;
       }
 
       li:hover {
         font-weight: bold;
-        border-bottom: 2px solid grey;
+        color: black;
       }
     }
 </style>
