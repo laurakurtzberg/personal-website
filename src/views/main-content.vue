@@ -1,5 +1,7 @@
 <template>
-    <section class="homepage-content">
+    <section class="page-content">
+      <Menu />
+      <!-- <h1><span class="top-logo">Laura</span><span class="top-logo">Jael</span></h1> -->
       <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
 
       <Menu />
@@ -33,32 +35,48 @@
     /*
      * Fonts
     */
-    @font-face {
-      font-family: 'Vegan Style Personal Use';
-      src: url('../assets/fonts/VeganStyleFont.eot');
-      src: url('../assets/fonts/VeganStyleFont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/VeganStyleFont.woff') format('woff'),
-        url('../assets/fonts/VeganStyleFont.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
 
-    @import url('https://fonts.googleapis.com/css?family=Karla|Rubik|Meddon');
+    @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
 
     /*
      * Global Styles
     */
+    $darkgrey: #232323;
+
     html, body {
       margin: 0;
       padding: 0;
       font-family: 'Karla', sans-serif;
     }
-    section.homepage-content {
-      min-height: 100%;
+
+    h1 {
+      font-size: 2em;
+      font-family: 'Rubik', sans-serif;
+      line-height: 2em;
+      margin: 25px 0px 25px 0px;
+    }
+
+    h2 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 16px;
+      color: $darkgrey;
+    }
+
+    :focus { outline:none; }
+    ::-moz-focus-inner { border:0; }
+
+    section.page-content {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
       margin: 0;
       padding: 0;
-      position: absolute;
-      width: 100%;
       text-align: center;
       font-family: sans-serif;
       color: white;
@@ -69,30 +87,6 @@
         padding: 20px;
         max-width: 200px;
         z-index: 100;
-      }
-
-      h1 {
-        font-size: 55px;
-        font-family: 'Vegan Style Personal Use', sans-serif;
-        text-shadow: 2px 2px #232323;
-        line-height: 55px;
-        margin: 35px 0px 25px 0px;
-
-        span.top-logo {
-          display: block
-        }
-
-        span.top-logo::first-letter {
-          font-size: 60px;
-          font-family: 'Meddon', sans-serif;
-          text-shadow: 2px 2px #232323;
-        }
-      }
-
-      h3 {
-        font-weight: normal;
-        font-size: 16px;
-        color: #232323;
       }
     }
 </style>
