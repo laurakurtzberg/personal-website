@@ -3,7 +3,7 @@
       <div class="menu-icon" v-show="isHidden" v-on:click="isHidden = false">
         <font-awesome-icon icon="bars" />
       </div>
-      <transition name="fade">
+      <transition name="slide">
         <ul id="main-menu" v-show="!isHidden" v-on:click="isHidden = true">
           <li v-for="item in MenuLinks">
             <router-link class="menu-link" tag="div" :to="item.linkTo">
@@ -31,13 +31,12 @@
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
-    .fade-enter-active, .fade-leave-active {
-      transition: transform 0.5s;
+    .slide-enter-active, .slide-leave-active {
+      transition: position 0.5s;
     }
 
-    .fade-enter, .fade-leave-to {
-      opacity: 0;
-      transform: scaleX(0);
+    .slide-enter, .slide-leave-to {
+      top: -500px;
     }
 
     div.menu-wrapper {
@@ -69,6 +68,7 @@
     }
 
     ul#main-menu {
+      color: black;
       list-style: none;
       transform-origin: top right;
       padding: 0;
@@ -76,13 +76,13 @@
       padding: 20px;
       margin-top: 15px;
       margin-right: 0px;
-      background-color: rgba(225,167,215,1);
-      text-transform: uppercase;
-      border-radius: 8px;
+      background-color: rgba(255,255,255,0.6);
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
 
       li {
-        padding: 10px;
-        font-size: 1.1em;
+        padding: 5px;
+        font-size: 1em;
         transition: all 0.2s ease-out;
         text-align: center;
       }

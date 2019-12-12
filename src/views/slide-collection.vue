@@ -7,7 +7,6 @@
     <section class="slide-collection">
       <div
         class="slide-collection-content"
-        v-bind:class="{ active: false, second: secondActive }"
         v-bind:style="{
           transform: 'rotateY('+ turn+'deg)',
         }"
@@ -62,22 +61,22 @@
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
-    main {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
 
     @media only screen and (max-width: 1000px) {
       button.left {
         margin-left: 25px;
+
+        svg {
+          margin-right: 2px;
+        }
       }
 
       button.right {
         margin-right: 25px;
+
+        svg {
+          margin-left: 2px;
+        }
       }
     }
 
@@ -122,8 +121,8 @@
 
       svg {
         fill: #232323;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
       }
 
       &:hover {

@@ -74,7 +74,7 @@
     flex-direction: row-reverse;
 
     button.social-media-icon {
-      width: 31px;
+      width: 30px;
       height: 30px;
       background-color: rgba(255, 255, 255, 0.9);
       border: none;

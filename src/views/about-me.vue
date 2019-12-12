@@ -2,14 +2,16 @@
     <section class="about-me">
       <div class="bio">
         <h2>Hey there!</h2>
-        My name is Laura, and I make online things
-        with data, art, and cartography. I have experience in journalism, science communication,
+        My name is Laura, and I make online things with data, art,
+        and cartography.
+        I have experience in journalism, science communication,
         interactive media, and web development.
         <br>
         <br>
         I grew up in Arizona and Sonora before moving to Miami to pursue an
-        <a href="https://interactive.miami.edu/">MFA in Interactive Media</a> at the University of Miami.
-        Nowadays I live in Santa Fe, NM where I work as a front end developer at
+        <a href="https://interactive.miami.edu/">MFA in Interactive Media</a>
+        at the University of Miami. Nowadays I live in Santa Fe, NM where I work
+        as a front end developer at
         <a href="Descarteslabs.com">Descartes Labs</a>.
       </div>
       <img class="my-portrait" src="images/pic-small.jpg" alt="portrait of Laura" />
