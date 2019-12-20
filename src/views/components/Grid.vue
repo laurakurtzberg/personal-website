@@ -127,7 +127,7 @@
     left:0;
     right:0;
     height: $gridLine;
-    z-index:2;
+    z-index: 2;
 
     &:nth-child(1) {
       top:10%;

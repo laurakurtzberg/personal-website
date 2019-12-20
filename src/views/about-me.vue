@@ -34,6 +34,7 @@
       margin: auto;
       height: auto;
       margin-top: 50px;
+      margin-bottom: 150px;
       width: 60%;
       max-width: 800px;
       background-color: rgba(255,255,255,0.6);

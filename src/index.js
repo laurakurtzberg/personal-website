@@ -22,13 +22,15 @@ import AboutMe from './views/about-me';
 import ISMP from './views/ismp';
 import SlideCollection from './views/slide-collection';
 import FlorestaSilenciosa from './views/projects/floresta-silenciosa';
+import CostingNature from './views/projects/costing-nature';
 
 // My routes
 const routes = [
   { path: '/', component: SlideCollection },
   { path: '/about', component: AboutMe },
   { path: '/ismp', component: ISMP },
-  { path: '/floresta-silenciosa', component: FlorestaSilenciosa }
+  { path: '/floresta-silenciosa', component: FlorestaSilenciosa },
+  { path: '/costing-nature', component: CostingNature }
 ]
 
 // Create the router instance and pass the `routes` option

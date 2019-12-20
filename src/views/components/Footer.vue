@@ -108,7 +108,7 @@
     margin: 0;
     padding: 30px;
     background-color: transparent;
-    font-size: 1.1em;
+    font-size: 0.9em;
     line-height: 1.3em;
   }
 </style>

@@ -11,12 +11,25 @@
           transform: 'rotateY('+ turn+'deg)',
         }"
       >
+      <!-- <ul id="main-menu">
+        <li v-for="item in Projects">
+          <router-link class="menu-link" tag="div" :to="item.linkTo">
+            {{ item.name }}
+          </router-link>
+        </li>
+      </ul> -->
+        <router-link
+          v-for="project in Projects"
+          tag="div"
+          :to="project.linkTo"
+        >
+          <Slide />
+        </router-link>
+        <!-- <Slide />
         <Slide />
         <Slide />
         <Slide />
-        <Slide />
-        <Slide />
-        <Slide />
+        <Slide /> -->
       </div>
     </section>
     </span>
@@ -44,17 +57,15 @@
         name: "SlideCollection",
         data: () => ({
           turn: 0,
-          data: () => ({
-              isHidden: true,
-              Projects: [
-                {name: 'Plant Friend', linkTo: '/plantfriend'},
-                {name: 'Airline Fuel Cost', linkTo: '/airlinefuel'},
-                {name: 'Floresta Silenciosa', linkTo: '/floresta'},
-                {name: 'CARTHE Map', linkTo: '/carthe'},
-                {name: 'Fires in the Amazon', linkTo: '/amazonfires'},
-                {name: 'Social Progress Index', linkTo: '/socialprogress'},
-              ]
-          }),
+          isHidden: true,
+          Projects: [
+            {name: 'Floresta Silenciosa', linkTo: '/floresta-silenciosa'},
+            {name: 'Plant Friend', linkTo: '/plantfriend'},
+            {name: 'Airline Fuel Cost', linkTo: '/airlinefuel'},
+            {name: 'Bay Drift Map', linkTo: '/bay-drift'},
+            {name: 'Costing Nature', linkTo: '/costing-nature'},
+            {name: 'Social Progress Index', linkTo: '/socialprogress'},
+          ]
         })
     }
 </script>

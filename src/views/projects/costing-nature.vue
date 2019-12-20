@@ -5,7 +5,7 @@
         <header>
           <h1 class="project-title">{{title}}</h1>
           <p class="project-subtitle">{{subtitle}}</p>
-          <a href="http://florestasilenciosa.ambiental.media/en/">
+          <a href="https://costingnature.infoamazonia.org/en/index.html">
             <button class="project-button">
               Check It Out
             </button>
@@ -31,10 +31,10 @@
 
 <script>
     export default {
-        name: "FlorestaSilenciosa",
+        name: "CostingNature",
         data: () => ({
-            title: 'Floresta Silenciosa',
-            subtitle: 'Visualizations to Describe the Silent Degredation of the Amazon',
+            title: 'Costing Nature',
+            subtitle: 'Visualizing the Cost of Environmental Destruction in the Amazon',
             description: `Floresta Silenciosa is one of the first projects I undertook with
             Ambiental Media, an independant environmental journalism startup out of Brazil.
             As part of an international team of journalists, scientists, photographers,
@@ -44,20 +44,20 @@
             images: [
               `<div class="carousel-slide">
                 <img
-                  src="images/floresta-para.gif"
-                  alt="Map of degradation in the entire Amazon region"
+                  src="images/costing.gif"
+                  alt="Animated GIF Map the entire Amazon region"
                 />
                </div>`,
               `<div class="carousel-slide">
                 <img
-                  src="images/Floresta-Silenciosa.jpg"
-                  alt="hexagon map of degradation in the Brazilian state of Pará"
+                  src="images/costing-nature-model.png"
+                  alt="Model of Forest Cover in the Amazon from 2010 to 2260"
                 />
                </div>`,
               `<div class="carousel-slide">
                 <img
-                  src="images/conservation-value.png"
-                  alt="Scientists calculated conservation values in the Brazilian state of Pará"
+                  src="images/carbon-index.png"
+                  alt="carbon ecosystem services index in plants in the Amazon"
                 />
                </div>`,
             ]
@@ -166,7 +166,7 @@
       margin: 0;
       height: 350px;
       background: grey;
-      background-image: url('~/images/Floresta-Silenciosa.jpg');
+      background-image: url('~/images/costing-nature-model.png');
       background-position: center;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;

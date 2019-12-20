@@ -70,7 +70,8 @@
 
     section.page-content {
       position: absolute;
-      height: 100%;
+      height: auto;
+      min-height: 100%;
       width: 100%;
       overflow: hidden;
       margin: 0;
