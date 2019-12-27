@@ -1,190 +1,330 @@
 <template>
-  <main>
+  <main class="page-content">
     <button class="left arrow-container" v-on:click="increaseTurn">
-        <font-awesome-icon icon="angle-left" />
+      <font-awesome-icon icon="angle-left" />
     </button>
-    <span v-touch:swipe.left="increaseTurn" v-touch:swipe.right="decreaseTurn">
-    <section class="slide-collection">
-      <div
-        class="slide-collection-content"
-        v-bind:style="{
-          transform: 'rotateY('+ turn+'deg)',
-        }"
-      >
-      <!-- <ul id="main-menu">
-        <li v-for="item in Projects">
-          <router-link class="menu-link" tag="div" :to="item.linkTo">
-            {{ item.name }}
-          </router-link>
-        </li>
-      </ul> -->
-        <router-link
-          v-for="project in Projects"
-          tag="div"
-          :to="project.linkTo"
-        >
-          <Slide />
-        </router-link>
-        <!-- <Slide />
-        <Slide />
-        <Slide />
-        <Slide />
-        <Slide /> -->
-      </div>
+    <section class="intro-words">
+      <p class="bigger">
+        I'm a Javascript Developer &amp; Data Visualization Specialist
+      </p>
+      <p class="medium">Check out some of my projects!</p>
     </section>
+    <span v-touch:swipe.left="increaseTurn" v-touch:swipe.right="decreaseTurn">
+      <section class="slide-collection">
+        <div
+          class="slide-collection-content"
+          v-bind:style="{
+            transform: 'rotateY(' + turn + 'deg)'
+          }"
+        >
+          <router-link
+            v-for="(project, index) in Projects"
+            :key="project.name + index"
+            class="slide-link"
+            tag="div"
+            :to="project.linkTo"
+          >
+            <keep-alive>
+              <Slide
+                v-bind:title="project.name"
+                v-bind:imageURL="project.imageURL"
+              />
+            </keep-alive>
+          </router-link>
+        </div>
+      </section>
     </span>
     <button class="right arrow-container" v-on:click="decreaseTurn">
-        <font-awesome-icon icon="angle-right" />
+      <font-awesome-icon icon="angle-right" />
     </button>
   </main>
 </template>
 
 <script>
-    import Slide from './components/Slide';
+import Slide from "./components/Slide";
 
-    export default {
-        methods: {
-          increaseTurn() {
-            this.turn += 60;
-          },
-          decreaseTurn() {
-            this.turn -= 60;
-          }
-        },
-        components: {
-          Slide
-        },
-        name: "SlideCollection",
-        data: () => ({
-          turn: 0,
-          isHidden: true,
-          Projects: [
-            {name: 'Floresta Silenciosa', linkTo: '/floresta-silenciosa'},
-            {name: 'Plant Friend', linkTo: '/plantfriend'},
-            {name: 'Airline Fuel Cost', linkTo: '/airlinefuel'},
-            {name: 'Bay Drift Map', linkTo: '/bay-drift'},
-            {name: 'Costing Nature', linkTo: '/costing-nature'},
-            {name: 'Social Progress Index', linkTo: '/socialprogress'},
-          ]
-        })
+const cellSize = 210;
+const numberOfCells = 12;
+const tz = Math.round(cellSize / 2 / Math.tan(Math.PI / numberOfCells));
+const theta = 360 / numberOfCells;
+console.log({ tz });
+
+export default {
+  methods: {
+    increaseTurn() {
+      this.turn += 30;
+    },
+    decreaseTurn() {
+      this.turn -= 30;
     }
+  },
+  components: {
+    Slide
+  },
+  name: "SlideCollection",
+  data: () => ({
+    turn: 0,
+    Projects: [
+      {
+        name: "Floresta Silenciosa",
+        imageURL: "images/Floresta-Silenciosa.jpg",
+        linkTo: "/floresta-silenciosa"
+      },
+      {
+        name: "Plant Friend",
+        imageURL: "images/zuzu-cropped.jpg",
+        linkTo: "/plantfriend"
+      },
+      {
+        name: "Airline Fuel Cost",
+        imageURL: "images/airline-fuel-cropped.png",
+        linkTo: "/airlinefuel"
+      },
+      {
+        name: "Bay Drift Map",
+        imageURL: "images/baydrift-map-cropped.png",
+        linkTo: "/bay-drift"
+      },
+      {
+        name: "Costing Nature",
+        imageURL: "images/costing-nature-cropped.png",
+        linkTo: "/costing-nature"
+      },
+      {
+        name: "Social Progress Index",
+        imageURL: "images/social-progress-cropped.png",
+        linkTo: "/socialprogress"
+      }
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // },
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // },
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // },
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // },
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // },
+      // {
+      //   name: "Social Progress Index",
+      //   imageURL: "images/social-progress-cropped.png",
+      //   linkTo: "/socialprogress"
+      // }
+    ]
+  })
+};
 </script>
 
 <style lang="scss">
-    @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik");
 
-    @media only screen and (max-width: 1000px) {
-      button.left {
-        margin-left: 25px;
+@media only screen and (max-width: 1000px) {
+  button.left {
+    margin-left: 25px;
 
-        svg {
-          margin-right: 2px;
-        }
-      }
-
-      button.right {
-        margin-right: 25px;
-
-        svg {
-          margin-left: 2px;
-        }
-      }
+    svg {
+      margin-right: 2px;
     }
+  }
 
-    section.slide-collection {
-      color: #232323;
-      position: absolute;
-      z-index: 100;
-	    top: 52%;
-	    left: 50%;
-	    width: 250px;
-	    height: 210px;
-	    margin: 0;
-	    perspective: 800px;
-	    transform: translate(-50%, -50%);
-      font-family: 'Karla', sans-serif;
+  button.right {
+    margin-right: 25px;
 
-      h1, h2, h3 {
-        font-family: 'Rubik', sans-serif;
-        text-transform: uppercase;
-      }
+    svg {
+      margin-left: 2px;
     }
+  }
+}
 
-    div.slide-collection-content {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: all 2s;
-      transition-timing-function: cubic-bezier(0.6, -0.1, 0.735, 0.045);
-    }
+main.page-content {
+  height: calc(100% - 200px);
+  margin: 100px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  color: black;
+  font-family: "Karla";
+  border-radius: 8px;
+  z-index: 1000;
+}
 
-    button.arrow-container {
-      position: absolute;
-      top: 50%;
-      z-index: 1000;
-      width: 30px;
-      height: 30px;
-      padding: 0;
-      border-radius: 15px;
-      transition: all 0.5s ease-out;
-      outline: none;
+section.intro-words {
+  margin-top: 15%;
 
-      svg {
-        fill: #232323;
-        width: 30px;
-        height: 30px;
-      }
+  p.bigger {
+    display: block;
+    width: 700px;
+    margin: auto;
+    font-size: 3em;
+    font-weight: bold;
+  }
 
-      &:hover {
-        background: grey;
-      }
-    }
+  p.medium {
+    font-size: 1.5em;
+  }
+}
 
-    .left {
-      margin-right: -28px;
-      left: 0;
-      margin-left: calc(50% - 400px);
-    }
+section.slide-collection {
+  color: #232323;
+  position: absolute;
+  z-index: 100;
+  top: 70%;
+  left: 50%;
+  width: 200px;
+  height: 210px;
+  margin: 0;
+  perspective: 2000px;
+  transform: translate(-50%, -50%);
+  font-family: "Karla", sans-serif;
 
-    .right {
-      margin-left: -28px;
-      right: 0;
-      margin-right: calc(50% - 400px);
-    }
+  h1,
+  h2,
+  h3 {
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+  }
+}
 
-    .slides {
-      font-size: 40px;
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
+div.slide-collection-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 2s;
+  transition-timing-function: cubic-bezier(0.6, -0.1, 0.735, 0.045);
 
-      @media (min-width: 600px) {
-        font-size: 80px;
-      }
+  .slide-link {
+    backface-visibility: hidden;
+  }
 
-      @media (min-width: 900px) {
-        font-size: 140px;
-      }
-    }
+  .slide-link:nth-child(1) {
+    transform: rotateY(0deg) translateZ(392px);
+  }
+  .slide-link:nth-child(2) {
+    transform: rotateY(30deg) translateZ(392px);
+  }
+  .slide-link:nth-child(3) {
+    transform: rotateY(60deg) translateZ(392px);
+  }
+  .slide-link:nth-child(4) {
+    transform: rotateY(90deg) translateZ(392px);
+  }
+  // .slide-link:nth-child(5) {
+  //   transform: rotateY(120deg) translateZ(392px);
+  // }
+  // .slide-link:nth-child(6) {
+  //   transform: rotateY(150deg) translateZ(392px);
+  // }
+  .slide-link:nth-child(5) {
+    transform: rotateY(300deg) translateZ(392px);
+  }
+  .slide-link:nth-child(6) {
+    transform: rotateY(330deg) translateZ(392px);
+  }
+  .slide-link:nth-child(7) {
+    transform: rotateY(180deg) translateZ(392px);
+  }
+  .slide-link:nth-child(8) {
+    transform: rotateY(210deg) translateZ(392px);
+  }
+  .slide-link:nth-child(9) {
+    transform: rotateY(240deg) translateZ(392px);
+  }
+  .slide-link:nth-child(10) {
+    transform: rotateY(270deg) translateZ(392px);
+  }
+  .slide-link:nth-child(11) {
+    transform: rotateY(300deg) translateZ(392px);
+  }
+  .slide-link:nth-child(12) {
+    transform: rotateY(330deg) translateZ(392px);
+  }
+}
 
-    button {
-      padding: 10px;
-      outline: none;
-      border: none;
-      -webkit-appearance: none;
-      background: #232323;
-      color: #fff;
-      font-weight: bold;
-      font-size: 18px;
-      cursor: pointer;
+button.arrow-container {
+  position: absolute;
+  top: 65%;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 15px;
+  outline: none;
+  background: rgba(236, 233, 242, 0.7);
+  transition: all 0.5s ease-out;
 
-      &:disabled {
-        opacity: 0.2;
-        cursor: no-drop;
-      }
-    }
+  svg {
+    color: #232323;
+    width: 30px;
+    height: 30px;
+  }
 
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+.left {
+  margin-right: -28px;
+  left: 0;
+  margin-left: calc(50% - 500px);
+}
+
+.right {
+  margin-left: -28px;
+  right: 0;
+  margin-right: calc(50% - 500px);
+}
+
+.slides {
+  font-size: 40px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  @media (min-width: 600px) {
+    font-size: 80px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 140px;
+  }
+}
+
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  background: #232323;
+  color: rgba(236, 233, 242, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: no-drop;
+  }
+}
 </style>

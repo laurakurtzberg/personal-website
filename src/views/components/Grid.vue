@@ -48,7 +48,7 @@
   .grid-wrapper {
     position: absolute;
     width: 100%;
-    height: 52%;
+    height: 400px;
     left: 0;
     bottom: 0;
     perspective: 200px;

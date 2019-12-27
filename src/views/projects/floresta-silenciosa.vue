@@ -9,7 +9,7 @@
             <button class="project-button">
               Check It Out
             </button>
-            </a>
+          </a>
         </header>
         <p>
           {{description}}

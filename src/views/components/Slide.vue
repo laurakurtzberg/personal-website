@@ -1,70 +1,83 @@
 <template>
-    <div class="slide rotated" :style="style">
-      <img class="backgroundimg" src="images/abstract-list-is-empty.png" alt="placeholder image" />
+  <div class="slide" :style="style">
+    <div
+      class="backgroundimg"
+      :style="{ backgroundImage: 'url(' + imageURL + ')' }"
+    >
       <div class="content">
-        <h2>{{ slideTitle }}</h2>
+        <div class="top-border"></div>
+        <h2>{{ title }}</h2>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Slide",
-        data: () => ({
-            slideTitle: 'My Project'
-        })
-    }
+export default {
+  name: "Slide",
+  props: ["title", "imageURL"]
+};
 </script>
 
 <style lang="scss">
-    img.backgroundimg {
-      z-index: 0;
-      align-self: center;
-      width: 190px;
-	    height: 210px;
-      display: none;
-    }
+div.top-border {
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  background: rgba(236, 233, 242, 1);
+}
+div.backgroundimg {
+  background: rgba(236, 233, 242, 0.5);
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  backface-visibility: hidden;
+}
 
-    div.content {
-      z-index: 100;
-    }
+div.content {
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  background: rgba(89, 118, 124, 0.5);
+  box-shadow: inset 0px 0px 0px 12px rgba(236, 233, 242, 1);
+  transition: all 0.5s ease-out;
 
-    div.slide {
-      position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 250px;
-	    height: 250px;
-	    border-radius: 6px;
-      backface-visibility: hidden;
-      background: rgba(236, 233, 242, 1);
-    }
+  &:hover {
+    background: rgba(236, 233, 242, 0.5);
+    cursor: pointer;
+  }
 
-    div.slide:nth-child(1) {
-       transform: rotateY(0) translateZ(282px);
-    }
+  &:focus {
+    background: rgba(236, 233, 242, 0.5);
+    cursor: pointer;
+  }
+}
 
-    div.slide:nth-child(2) {
-       transform: rotateY(60deg) translateZ(282px);
-    }
+div.slide {
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transition: all 0.5s ease-out;
+}
 
-    div.slide:nth-child(3) {
-       transform: rotateY(120deg) translateZ(282px);
-    }
-
-    div.slide:nth-child(4) {
-       transform: rotateY(180deg) translateZ(282px);
-    }
-
-    div.slide:nth-child(5) {
-       transform: rotateY(240deg) translateZ(282px);
-    }
-
-    div.slide:nth-child(6) {
-       transform: rotateY(300deg) translateZ(282px);
-    }
-
-    h2 {
-      font-size: 18px;
-    }
+h2 {
+  user-select: none;
+  font-size: 0.8em;
+  position: relative;
+  top: 145px;
+  background: rgba(236, 233, 242, 1);
+  padding: 15px 0px 15px 0px;
+  z-index: 100;
+}
 </style>

@@ -1,7 +1,9 @@
 <template>
     <section class="page-content">
-      <Menu />
-      <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
+      <section class="sidebar">
+        <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
+        <!-- <Menu /> -->
+      </section>
 
       <router-view></router-view>
 
@@ -81,11 +83,35 @@
       color: white;
       background: rgb(89,118,124);
       background: linear-gradient(180deg, rgba(89,118,124,1) 0%, rgba(151,207,220,1) 20%, rgba(196,202,230,1) 40%, rgba(225,167,215,1) 60%, rgba(237,141,202,1) 80%, rgba(211,160,191,1) 100%);
+    }
 
-      .name-logo {
+    section.sidebar {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      width: 200px;
+
+      img.name-logo {
+        user-select: none;
+        pointer-events: none;
         padding: 20px;
         max-width: 200px;
         z-index: 100;
+        margin-top: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      section.sidebar {
+        position: static;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+
+        img.name-logo {
+          margin-top: 0;
+          width: 150px;
+        }
       }
     }
 </style>
