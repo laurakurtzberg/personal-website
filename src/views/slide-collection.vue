@@ -5,7 +5,7 @@
     </button>
     <section class="intro-words">
       <p class="bigger">
-        I'm a Javascript Developer &amp; Data Visualization Specialist
+        I'm a Javascript Developer &amp; Data Visualization Designer
       </p>
       <p class="medium">Check out some of my projects!</p>
     </section>
@@ -66,19 +66,19 @@ export default {
     turn: 0,
     Projects: [
       {
-        name: "Floresta Silenciosa",
+        name: "Silent Forest",
         imageURL: "images/Floresta-Silenciosa.jpg",
         linkTo: "/floresta-silenciosa"
       },
       {
         name: "Plant Friend",
         imageURL: "images/zuzu-cropped.jpg",
-        linkTo: "/plantfriend"
+        linkTo: "/plant-friend"
       },
       {
         name: "Airline Fuel Cost",
         imageURL: "images/airline-fuel-cropped.png",
-        linkTo: "/airlinefuel"
+        linkTo: "/airline-fuel"
       },
       {
         name: "Bay Drift Map",
@@ -93,38 +93,13 @@ export default {
       {
         name: "Social Progress Index",
         imageURL: "images/social-progress-cropped.png",
-        linkTo: "/socialprogress"
+        linkTo: "/social-progress"
+      },
+      {
+        name: "Aves Interactive",
+        imageURL: "images/aves-1.png",
+        linkTo: "/aves-interactive"
       }
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // },
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // },
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // },
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // },
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // },
-      // {
-      //   name: "Social Progress Index",
-      //   imageURL: "images/social-progress-cropped.png",
-      //   linkTo: "/socialprogress"
-      // }
     ]
   })
 };
@@ -164,6 +139,8 @@ main.page-content {
 
 section.intro-words {
   margin-top: 15%;
+  color: #232323;
+  user-select: none;
 
   p.bigger {
     display: block;
@@ -223,12 +200,6 @@ div.slide-collection-content {
   .slide-link:nth-child(4) {
     transform: rotateY(90deg) translateZ(392px);
   }
-  // .slide-link:nth-child(5) {
-  //   transform: rotateY(120deg) translateZ(392px);
-  // }
-  // .slide-link:nth-child(6) {
-  //   transform: rotateY(150deg) translateZ(392px);
-  // }
   .slide-link:nth-child(5) {
     transform: rotateY(300deg) translateZ(392px);
   }
@@ -236,22 +207,7 @@ div.slide-collection-content {
     transform: rotateY(330deg) translateZ(392px);
   }
   .slide-link:nth-child(7) {
-    transform: rotateY(180deg) translateZ(392px);
-  }
-  .slide-link:nth-child(8) {
-    transform: rotateY(210deg) translateZ(392px);
-  }
-  .slide-link:nth-child(9) {
-    transform: rotateY(240deg) translateZ(392px);
-  }
-  .slide-link:nth-child(10) {
     transform: rotateY(270deg) translateZ(392px);
-  }
-  .slide-link:nth-child(11) {
-    transform: rotateY(300deg) translateZ(392px);
-  }
-  .slide-link:nth-child(12) {
-    transform: rotateY(330deg) translateZ(392px);
   }
 }
 
