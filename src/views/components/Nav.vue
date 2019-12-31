@@ -1,8 +1,8 @@
 <template>
-  <footer class="global-footer">
-    <ul id="footer-nav">
+  <nav class="global-nav">
+    <ul id="nav">
       <li v-for="item in FooterLinks">
-        <router-link class="footer-link" tag="div" :to="item.linkTo">
+        <router-link class="nav-link" tag="div" :to="item.linkTo">
           {{ item.name }}
         </router-link>
       </li>
@@ -23,20 +23,20 @@
           <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }" />
         </button>
       </a>
-      <a href="#">
+      <a href="https://glitch.com/@laura.kurtzberg">
         <button class="social-media-icon" title="Glitch">
           <Glitch />
         </button>
       </a>
     </section>
-  </footer>
+  </nav>
 </template>
 
 <script>
 import Glitch from "./Glitch";
 
 export default {
-  name: "Footer",
+  name: "Nav",
   data: () => ({
     FooterLinks: [
       { name: "Home", linkTo: "/" },
@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Karla|Rubik");
-ul#footer-nav {
+ul#nav {
   width: 200px;
   display: flex;
   flex-direction: row;
@@ -111,7 +111,7 @@ section#social-media {
   }
 }
 
-footer.global-footer {
+nav.global-nav {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -126,5 +126,28 @@ footer.global-footer {
   background-color: transparent;
   font-size: 0.9em;
   line-height: 1.3em;
+}
+
+@media only screen and (max-width: 1200px) {
+  ul#nav {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  section#social-media {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: flex-start;
+    margin-top: -130px;
+    margin-left: 10px;
+  }
+
+  ul#nav {
+    flex-direction: column;
+    li {
+      padding-bottom: 15px;
+    }
+  }
 }
 </style>

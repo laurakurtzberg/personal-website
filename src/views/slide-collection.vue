@@ -1,11 +1,19 @@
 <template>
   <main class="page-content">
-    <button class="left arrow-container" v-on:click="increaseTurn">
-      <font-awesome-icon icon="angle-left" />
-    </button>
+    <transition name="fade">
+      <button
+        v-if="turn < 60"
+        class="left arrow-container"
+        v-on:click="increaseTurn"
+      >
+        <font-awesome-icon icon="angle-left" />
+      </button>
+    </transition>
     <section class="intro-words">
       <p class="bigger">
-        I'm a Javascript Developer &amp; Data Visualization Designer
+        I'm a Javascript Developer &amp;
+        <br />
+        Data Visualization Designer
       </p>
       <p class="medium">Check out some of my projects!</p>
     </section>
@@ -34,9 +42,15 @@
         </div>
       </section>
     </span>
-    <button class="right arrow-container" v-on:click="decreaseTurn">
-      <font-awesome-icon icon="angle-right" />
-    </button>
+    <transition name="fade">
+      <button
+        v-if="turn > -60"
+        class="right arrow-container"
+        v-on:click="decreaseTurn"
+      >
+        <font-awesome-icon icon="angle-right" />
+      </button>
+    </transition>
   </main>
 </template>
 
@@ -81,9 +95,9 @@ export default {
         linkTo: "/airline-fuel"
       },
       {
-        name: "Bay Drift Map",
-        imageURL: "images/baydrift-map-cropped.png",
-        linkTo: "/bay-drift"
+        name: "Social Progress Index",
+        imageURL: "images/social-progress-cropped.png",
+        linkTo: "/social-progress"
       },
       {
         name: "Costing Nature",
@@ -91,9 +105,9 @@ export default {
         linkTo: "/costing-nature"
       },
       {
-        name: "Social Progress Index",
-        imageURL: "images/social-progress-cropped.png",
-        linkTo: "/social-progress"
+        name: "Bay Drift Map",
+        imageURL: "images/baydrift-map-cropped.png",
+        linkTo: "/bay-drift"
       },
       {
         name: "Aves Interactive",
@@ -108,26 +122,18 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Karla|Rubik");
 
-@media only screen and (max-width: 1000px) {
-  button.left {
-    margin-left: 25px;
-
-    svg {
-      margin-right: 2px;
-    }
-  }
-
-  button.right {
-    margin-right: 25px;
-
-    svg {
-      margin-left: 2px;
-    }
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 
 main.page-content {
   height: calc(100% - 200px);
+  min-height: 400px;
   margin: 100px;
   margin-top: 20px;
   margin-bottom: 150px;
@@ -138,9 +144,13 @@ main.page-content {
 }
 
 section.intro-words {
-  margin-top: 15%;
   color: #232323;
   user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
 
   p.bigger {
     display: block;
@@ -183,10 +193,6 @@ div.slide-collection-content {
   transform-style: preserve-3d;
   transition: all 2s;
   transition-timing-function: cubic-bezier(0.6, -0.1, 0.735, 0.045);
-
-  .slide-link {
-    backface-visibility: hidden;
-  }
 
   .slide-link:nth-child(1) {
     transform: rotateY(0deg) translateZ(392px);
@@ -281,6 +287,121 @@ button {
   &:disabled {
     opacity: 0.2;
     cursor: no-drop;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  section.intro-words {
+    margin-top: -20px;
+    font-size: 0.9em;
+    width: 100%;
+
+    p.bigger {
+      width: 100%;
+      min-width: 600px;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  button.arrow-container {
+    height: 100vh;
+    border-radius: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 1);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    &:focus {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  button.left {
+    margin-left: 0px;
+
+    svg {
+      margin-right: 2px;
+    }
+  }
+
+  button.right {
+    margin-right: 0px;
+
+    svg {
+      margin-left: 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  button.arrow-container {
+    display: none;
+  }
+
+  main.page-content {
+    position: relative;
+    height: auto;
+    z-index: 1000;
+  }
+
+  section.intro-words {
+    font-size: 0.7em;
+
+    p.bigger {
+      width: 100%;
+      margin: 0;
+    }
+
+    p.medium {
+      width: 100%;
+    }
+  }
+
+  section.slide-collection {
+    position: static;
+    height: auto;
+    width: 100%;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  div.slide-collection-content {
+    position: static;
+    height: auto;
+    transform: none;
+
+    .slide-link {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .slide-link:nth-child(1) {
+      transform: none;
+    }
+    .slide-link:nth-child(2) {
+      transform: none;
+    }
+    .slide-link:nth-child(3) {
+      transform: none;
+    }
+    .slide-link:nth-child(4) {
+      transform: none;
+    }
+    .slide-link:nth-child(5) {
+      transform: none;
+    }
+    .slide-link:nth-child(6) {
+      transform: none;
+    }
+    .slide-link:nth-child(7) {
+      transform: none;
+    }
   }
 }
 </style>

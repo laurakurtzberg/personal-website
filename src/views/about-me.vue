@@ -1,23 +1,105 @@
 <template>
   <section class="about-me">
-    <div class="bio">
-      <h2>Hey there!</h2>
-      My name is Laura, and I make online things with data, art, and
-      cartography. I have experience in web development, science communication,
-      and digital journalism.
-      <br />
-      <br />
-      I grew up in Arizona and Sonora before moving to Miami to pursue an
-      <a href="https://interactive.miami.edu/">MFA in Interactive Media</a>
-      at the University of Miami. Nowadays I live in Santa Fe, NM where I work
-      as a front end developer at
-      <a href="Descarteslabs.com">Descartes Labs</a>.
-    </div>
-    <img
-      class="my-portrait"
-      src="images/profilepic.jpg"
-      alt="portrait of Laura"
-    />
+    <section class="intro">
+      <section class="bio">
+        <h2>Hey there!</h2>
+        My name is Laura, and I make online things with data, art, and
+        cartography. I have experience in web development, science
+        communication, and digital journalism.
+        <br />
+        <br />
+        I grew up in Arizona and Sonora before moving to Miami to pursue an
+        <a href="https://interactive.miami.edu/">MFA in Interactive Media</a>
+        at the University of Miami. Nowadays I live in Santa Fe, NM where I work
+        as a front end developer at
+        <a href="Descarteslabs.com">Descartes Labs</a>.
+      </section>
+      <img
+        class="my-portrait"
+        src="images/profilepic.jpg"
+        alt="portrait of Laura"
+      />
+    </section>
+    <section class="resume">
+      <section class="skills">
+        <h3>Skills</h3>
+        <ul class="technical-skills">
+          <li>D3.js</li>
+          <li>GIS</li>
+          <li>HTML/CSS</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>R</li>
+          <li>Python</li>
+          <li>P5.js</li>
+          <li>Vue.js</li>
+          <li>UX Research</li>
+          <li>Adobe Illustrator</li>
+          <li>Styled Components</li>
+          <li>Three.js</li>
+          <li>Git/Github</li>
+        </ul>
+
+        <p class="languages">
+          Languages: Fluent in Spanish and Portuguese, Intermediate French
+        </p>
+      </section>
+      <section class="experience">
+        <h3>Work Experience</h3>
+        <section class="work-block">
+          <p class="workplace">Descartes Labs</p>
+          <p class="position">Front End Developer</p>
+          <p class="dates">June 2018 - present</p>
+          <p class="location">Santa Fe, NM</p>
+        </section>
+
+        <section class="work-block">
+          <p class="workplace">WLRN Public Media</p>
+          <p class="position">Data Journalism Intern</p>
+          <p class="dates">February 2018 - May 2018</p>
+          <p class="location">Miami, FL</p>
+        </section>
+
+        <section class="work-block">
+          <p class="workplace">Univision Communications Inc.</p>
+          <p class="position">Fellow Digital Journalist</p>
+          <p class="dates">October 2017 - February 2018</p>
+          <p class="location">Miami, FL</p>
+        </section>
+
+        <section class="work-block">
+          <p class="workplace">University of Miami</p>
+          <p class="position">Graduate Assistant</p>
+          <p class="dates">August 2016 - May 2018</p>
+          <p class="location">Coral Gables, FL</p>
+        </section>
+      </section>
+
+      <section class="education">
+        <h3>Education</h3>
+
+        <section class="edu-block">
+          <p class="university-name">University of Miami</p>
+          <p class="degree-program">Interactive Media MFA</p>
+          <p class="program-details">Data Visualization track</p>
+        </section>
+
+        <section class="edu-block">
+          <p class="university-name">Salzburg Media Academy of Social Change</p>
+          <p class="degree-program">Fellow 2017</p>
+        </section>
+
+        <section class="edu-block">
+          <p class="university-name">University of Arizona</p>
+          <p class="degree-program">B.A. in Information Science and Arts</p>
+          <p class="program-details">
+            Honors Thesis: Data Visualization Portfolio
+          </p>
+        </section>
+      </section>
+    </section>
   </section>
 </template>
 
@@ -34,11 +116,125 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Karla|Rubik");
 
 section.about-me {
+  width: 90%;
+  margin: auto;
+  margin-top: 130px;
+  margin-bottom: 100px;
+  font-family: "Karla";
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+section.resume {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  text-align: left;
+  border-radius: 8px;
+  padding: 20px;
+  color: #232323;
+
+  ul.technical-skills {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-right: 25px;
+      padding-bottom: 10px;
+      list-style: none;
+      display: inline-block;
+    }
+  }
+
+  section.skills {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  section.experience {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    section.work-block {
+      margin-bottom: 20px;
+      line-height: 1em;
+
+      p.workplace {
+        display: inline;
+        font-weight: bold;
+
+        &:after {
+          content: "/";
+          padding: 10px;
+        }
+      }
+
+      p.position {
+        display: inline;
+      }
+
+      p.dates {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        color: #6e6e6e;
+        margin-top: 5px;
+      }
+
+      p.location {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        margin-top: -10px;
+        color: #6e6e6e;
+      }
+
+      ul.description {
+        margin-top: -5px;
+      }
+    }
+  }
+
+  section.education {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    section.edu-block {
+      margin-bottom: 30px;
+
+      p.university-name {
+        font-weight: bold;
+        display: inline;
+
+        &:after {
+          content: "/";
+          padding: 10px;
+        }
+      }
+
+      p.degree-program {
+        display: inline;
+      }
+
+      p.program-details {
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        color: #6e6e6e;
+      }
+    }
+  }
+}
+
+section.intro {
   margin: auto;
   height: auto;
-  margin-top: 10%;
-  margin-bottom: 150px;
-  width: 60%;
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -46,7 +242,6 @@ section.about-me {
   text-align: left;
   display: flex;
   flex-direction: row;
-  font-family: "Karla";
   padding: 20px;
   border-radius: 8px;
   position: relative;
@@ -57,7 +252,7 @@ section.about-me {
     font-weight: bold;
   }
 
-  div.bio {
+  section.bio {
     width: 90%;
     color: black;
     text-align: left;
@@ -97,19 +292,23 @@ button.contact {
   }
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 600px) {
   section.about-me {
-    width: 65%;
-    margin-left: 270px;
-    padding-bottom: 50px;
+    img.my-portrait {
+      top: -135px;
+    }
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  section.intro {
+    padding-bottom: 50px;
+  }
+
   section.about-me {
     margin-left: auto;
+    margin-top: 20px;
     padding-top: 50px;
-    padding-bottom: 40px;
     width: 80%;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +326,7 @@ button.contact {
     position: absolute;
     left: 50%;
     margin-left: -80px;
-    top: -110px;
+    top: -120px;
   }
 }
 </style>

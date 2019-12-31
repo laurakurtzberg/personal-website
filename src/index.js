@@ -68,15 +68,15 @@ const routes = [
     path: "/aves-interactive",
     component: ProjectPage,
     props: aves_interactive_props
+  },
+  { path: "/airline-fuel", component: ProjectPage, props: airline_fuel_props },
+  { path: "/bay-drift", component: ProjectPage, props: bay_drift_props },
+  { path: "/plant-friend", component: ProjectPage, props: plant_friend_props },
+  {
+    path: "/social-progress",
+    component: ProjectPage,
+    props: social_progress_props
   }
-  // { path: "/airline-fuel", component: ProjectPage, props: airline_fuel_props },
-  // { path: "/bay-drift", component: ProjectPage, props: bay_drift_props },
-  // { path: "/plant-friend", component: ProjectPage, props: plant_friend_props },
-  // {
-  //   path: "/social-progress",
-  //   component: ProjectPage,
-  //   props: social_progress_props
-  // }
 ];
 
 // Create the router instance and pass the `routes` option

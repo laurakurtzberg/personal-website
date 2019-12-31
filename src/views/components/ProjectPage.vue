@@ -8,7 +8,7 @@
       <header>
         <h1 class="project-title">{{ title }}</h1>
         <p class="project-subtitle">{{ subtitle }}</p>
-        <a href="http://florestasilenciosa.ambiental.media/en/">
+        <a v-if="link" :href="link">
           <button class="project-button">
             Check It Out
           </button>
@@ -19,7 +19,7 @@
       </p>
     </section>
     <section class="tools-used">
-      <p><span>Tools Used:</span>{{ tools }}</p>
+      <p><span>Tools Used: </span>{{ tools }}</p>
     </section>
     <section class="image-carousel">
       <carousel
@@ -28,16 +28,24 @@
         indicator-type="disc"
       ></carousel>
     </section>
-    <section class="conclusion">
-      <p>this is a test to see about scroll</p>
-    </section>
   </main>
 </template>
 
 <script>
 export default {
   name: "ProjectPage",
-  props: ["title", "subtitle", "description", "imageURL", "tools", "images"]
+  props: {
+    title: String,
+    subtitle: String,
+    link: {
+      type: String,
+      default: null
+    },
+    description: String,
+    imageURL: String,
+    tools: String,
+    images: Array
+  }
 };
 </script>
 
@@ -50,10 +58,11 @@ main.project-page {
   margin: auto;
   height: auto;
   min-height: 800px;
-  margin-top: 50px;
-  margin-bottom: 150px;
-  width: 80%;
-  max-width: 1000px;
+  margin-top: 130px;
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  width: 90%;
+  max-width: 800px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: black;
@@ -84,7 +93,13 @@ main.project-page {
       text-align: center;
 
       img {
-        height: 450px;
+        max-height: 450px;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      img.smaller {
+        max-width: 700px;
       }
     }
   }
@@ -145,9 +160,21 @@ div.featured-image {
   background-position: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-bottom: 1px solid #ccc;
 }
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  main.project-page {
+    margin-top: 0px;
+    max-width: 1000px;
+  }
+
+  p.project-subtitle {
+    max-width: calc(100% - 165px);
+  }
 }
 </style>

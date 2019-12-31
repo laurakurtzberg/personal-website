@@ -26,6 +26,7 @@ div.top-border {
   width: 100%;
   background: rgba(236, 233, 242, 1);
 }
+
 div.backgroundimg {
   background: rgba(236, 233, 242, 0.5);
   z-index: 0;
@@ -52,7 +53,7 @@ div.content {
   backface-visibility: hidden;
   background: rgba(89, 118, 124, 0.5);
   box-shadow: inset 0px 0px 0px 12px rgba(236, 233, 242, 1);
-  transition: all 0.5s ease-out;
+  transition: background 0.5s ease-out;
 
   &:hover {
     background: rgba(236, 233, 242, 0.5);
@@ -75,9 +76,33 @@ h2 {
   user-select: none;
   font-size: 0.8em;
   position: relative;
-  top: 145px;
+  top: 150px;
   background: rgba(236, 233, 242, 1);
-  padding: 15px 0px 15px 0px;
+  padding: 12px 0px 12px 0px;
   z-index: 100;
+}
+
+@media only screen and (max-width: 700px) {
+  div.slide {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+
+  div.content {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0px 0px 0px 20px rgba(236, 233, 242, 1);
+  }
+
+  div.backgroundimg {
+    width: 300px;
+    height: 300px;
+  }
+
+  h2 {
+    top: 240px;
+    font-size: 1em;
+  }
 }
 </style>
