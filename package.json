@@ -1,15 +1,16 @@
 {
-  "name": "vue-webpack",
+  "name": "vue-porfolio-project",
   "version": "1.0.0",
-  "description": "Demo app for showing how to bootstrap vue with webpack",
+  "description": "Portfolio project made with vue",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --color --progress --config config/webpack.config.js"
+    "start": "webpack-dev-server --color --progress --config config/webpack.config.js",
+    "build": "NODE_ENV=production webpack --config config/webpack.config.js"
   },
   "keywords": [
     "vue"
   ],
-  "author": "Dushyant Sabharwal",
+  "author": "Laura K",
   "license": "MIT",
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.2",

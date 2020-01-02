@@ -177,4 +177,20 @@ a {
     max-width: calc(100% - 165px);
   }
 }
+
+@media only screen and (max-width: 700px) {
+  main.project-page section.description header button.project-button {
+    position: static;
+    width: 80%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: -10px;
+  }
+
+  p.project-subtitle {
+    max-width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}
 </style>

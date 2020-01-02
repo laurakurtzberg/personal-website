@@ -140,7 +140,7 @@ nav.global-nav {
     flex-direction: column-reverse;
     align-self: flex-start;
     margin-top: -130px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   ul#nav {

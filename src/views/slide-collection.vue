@@ -57,11 +57,12 @@
 <script>
 import Slide from "./components/Slide";
 
+/* Can use these lines to calculate theta
 const cellSize = 210;
 const numberOfCells = 12;
 const tz = Math.round(cellSize / 2 / Math.tan(Math.PI / numberOfCells));
 const theta = 360 / numberOfCells;
-console.log({ tz });
+*/
 
 export default {
   methods: {
@@ -70,6 +71,11 @@ export default {
     },
     decreaseTurn() {
       this.turn -= 30;
+    },
+    handleResize() {
+      if (window.innerWidth <= 700) {
+        this.turn = 0;
+      }
     }
   },
   components: {
@@ -115,7 +121,14 @@ export default {
         linkTo: "/aves-interactive"
       }
     ]
-  })
+  }),
+  // bind event handlers to the `handleResize` method (defined in methods)
+  mounted: function() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeDestroy: function() {
+    window.removeEventListener("resize", this.handleResize);
+  }
 };
 </script>
 
@@ -306,9 +319,9 @@ button {
 
 @media only screen and (max-width: 1000px) {
   button.arrow-container {
-    height: 100vh;
-    border-radius: 0;
-    top: 0;
+    height: 50vh;
+    border-radius: 8px;
+    top: 350px;
     background: rgba(255, 255, 255, 1);
 
     &:hover {

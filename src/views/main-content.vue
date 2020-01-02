@@ -4,7 +4,9 @@
       <img class="name-logo" src="images/laura-jael.svg" alt="Laura Jael" />
     </section>
 
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
 
     <Grid />
     <Nav />
@@ -45,6 +47,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Karla", sans-serif;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 
 h1 {
