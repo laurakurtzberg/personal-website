@@ -44,7 +44,7 @@ export const costing_nature_props = {
   InfoAmazonia’s Costing Nature project and the gif animation of the map was
   widely shared via social media.`,
   tools: "Leaflet, DJ.js, Mapbox.js, Mapbox Studio, R",
-  imageURL: "images/Costing-nature-model.png",
+  imageURL: "images/costing-nature-model.png",
   images: [
     `<div class="carousel-slide">
         <img
