@@ -82,9 +82,14 @@ const routes = [
 ];
 
 // Create the router instance and pass the `routes` option
+/* eslint-disable no-unused-vars */
 const router = new VueRouter({
-  routes: routes
+  routes: routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });
+/* eslint-enable */
 
 new Vue({
   render: h => h(App),

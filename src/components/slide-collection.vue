@@ -320,6 +320,9 @@ button {
 }
 
 @media only screen and (max-width: 1000px) {
+  main.page-content {
+    margin: 0;
+  }
   button.arrow-container {
     height: 50vh;
     border-radius: 8px;
