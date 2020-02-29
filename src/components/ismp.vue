@@ -10,7 +10,7 @@
       <a href="https://glitch.com/@laura.kurtzberg/ism-ps">here</a>.
     </p>
     <p>
-      (I just started this idea so there aren't any projects yet. More coming
+      (I just started this idea so there aren't many projects yet. More coming
       soon!)
     </p>
   </section>
