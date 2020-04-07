@@ -51,7 +51,7 @@
         <section class="work-block">
           <p class="workplace">Descartes Labs</p>
           <p class="position">Front End Developer</p>
-          <p class="dates">June 2018 - present</p>
+          <p class="dates">June 2018 - April 2020</p>
           <p class="location">Santa Fe, NM</p>
         </section>
 
