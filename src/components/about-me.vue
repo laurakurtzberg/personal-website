@@ -10,9 +10,9 @@
         <br />
         I grew up in Arizona and Sonora before moving to Miami to pursue an
         <a href="https://interactive.miami.edu/">MFA in Interactive Media</a>
-        at the University of Miami. Nowadays I live in Santa Fe, NM where I work
-        as a front end developer at
-        <a href="Descarteslabs.com">Descartes Labs</a>.
+        at the University of Miami. Nowadays I freelance for <a href="https://ambiental.media/">Ambiental Media</a>
+        as a Data Visualization Developer.
+        Feel free to reach out - I'm looking for my next opportunity!
       </section>
       <img
         class="my-portrait"
@@ -26,11 +26,11 @@
         <ul class="technical-skills">
           <li>D3.js</li>
           <li>GIS</li>
-          <li>HTML/CSS</li>
+          <li>HTML</li>
           <li>Javascript</li>
           <li>Typescript</li>
           <li>React</li>
-          <li>Redux</li>
+          <li>CSS/SCSS</li>
           <li>R</li>
           <li>Python</li>
           <li>P5.js</li>
@@ -48,6 +48,13 @@
       </section>
       <section class="experience">
         <h3>Work Experience</h3>
+        <section class="work-block">
+          <p class="workplace">Ambiental Media</p>
+          <p class="position">Freelance Data Visualization Developer</p>
+          <p class="dates">April 2020 - present</p>
+          <p class="location">Remote</p>
+        </section>
+
         <section class="work-block">
           <p class="workplace">Descartes Labs</p>
           <p class="position">Front End Developer</p>
@@ -247,6 +254,7 @@ section.intro {
   display: flex;
   flex-direction: row;
   padding: 20px;
+  padding-bottom: 40px;
   border-radius: 8px;
   position: relative;
   z-index: 1000;
@@ -290,10 +298,6 @@ a {
 }
 
 @media only screen and (max-width: 1200px) {
-  section.intro {
-    padding-bottom: 50px;
-  }
-
   section.about-me {
     margin-left: auto;
     margin-top: 20px;

@@ -1,21 +1,29 @@
 <template>
   <main class="page-content">
-    <transition name="fade">
-      <button
-        v-if="turn < 60"
-        class="left arrow-container"
-        v-on:click="increaseTurn"
-      >
-        <font-awesome-icon icon="angle-left" />
-      </button>
-    </transition>
     <section class="intro-words">
+      <transition name="fade">
+        <button
+          v-if="turn < 60"
+          class="left arrow-container"
+          v-on:click="increaseTurn"
+        >
+          <font-awesome-icon icon="angle-left" />
+        </button>
+      </transition>
       <p class="bigger">
         I'm a Javascript Developer &amp;
-        <br class="responsive-break" />
         Data Visualization Designer
       </p>
       <p class="medium">Check out some of my projects!</p>
+      <transition name="fade">
+        <button
+          v-if="turn > -60"
+          class="right arrow-container"
+          v-on:click="decreaseTurn"
+        >
+          <font-awesome-icon icon="angle-right" />
+        </button>
+      </transition>
     </section>
     <span v-touch:swipe.left="increaseTurn" v-touch:swipe.right="decreaseTurn">
       <section class="slide-collection">
@@ -42,15 +50,6 @@
         </div>
       </section>
     </span>
-    <transition name="fade">
-      <button
-        v-if="turn > -60"
-        class="right arrow-container"
-        v-on:click="decreaseTurn"
-      >
-        <font-awesome-icon icon="angle-right" />
-      </button>
-    </transition>
   </main>
 </template>
 
@@ -101,7 +100,7 @@ export default {
         linkTo: "/airline-fuel"
       },
       {
-        name: "Social Progress Index",
+        name: "Social Progress Idx",
         imageURL: "images/social-progress-cropped.png",
         linkTo: "/social-progress"
       },
@@ -145,11 +144,8 @@ export default {
 }
 
 main.page-content {
-  height: calc(100% - 200px);
-  min-height: 400px;
-  margin: 100px;
+  min-height: 800px;
   margin-top: 20px;
-  margin-bottom: 150px;
   color: black;
   font-family: "Karla";
   border-radius: 8px;
@@ -170,7 +166,7 @@ section.intro-words {
 
   p.bigger {
     display: block;
-    width: 700px;
+    width: 900px;
     margin: auto;
     font-size: 3em;
     font-weight: bold;
@@ -185,11 +181,10 @@ section.slide-collection {
   color: #232323;
   position: absolute;
   z-index: 100;
-  top: 70%;
+  margin-top: 200px;
   left: 50%;
   width: 200px;
   height: 210px;
-  margin: 0;
   perspective: 2000px;
   transform: translate(-50%, -50%);
   font-family: "Karla", sans-serif;
@@ -234,7 +229,7 @@ div.slide-collection-content {
 
 button.arrow-container {
   position: absolute;
-  top: 65%;
+  margin-top: 500px;
   z-index: 1000;
   width: 30px;
   height: 30px;
@@ -323,10 +318,14 @@ button {
   main.page-content {
     margin: 0;
   }
+
+  p.bigger {
+    width: 90%;
+  }
+
   button.arrow-container {
     height: 50vh;
     border-radius: 8px;
-    top: 350px;
     background: rgba(255, 255, 255, 1);
 
     &:hover {
