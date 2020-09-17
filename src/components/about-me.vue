@@ -10,9 +10,11 @@
         <br />
         I grew up in Arizona and Sonora before moving to Miami to pursue an
         <a href="https://interactive.miami.edu/">MFA in Interactive Media</a>
-        at the University of Miami. Nowadays I freelance for <a href="https://ambiental.media/">Ambiental Media</a>
-        as a Data Visualization Developer.
-        Feel free to reach out - I'm looking for my next opportunity!
+        at the University of Miami. I am an Assistant Professor at
+        <a href="https://carta.fiu.edu/journalism/">Florida International
+        University's <a href="">Department of Journalism and 
+        Media</a> and I work on data visualization and mapping for
+        <a href="https://ambiental.media/">Ambiental Media</a>.
       </section>
       <img
         class="my-portrait"
