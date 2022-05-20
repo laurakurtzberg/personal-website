@@ -1,6 +1,6 @@
 # Laura's Portfolio Project
 
-## Created with vue + vue cli
+## Making a small change as a test
 
 ## Project setup
 
