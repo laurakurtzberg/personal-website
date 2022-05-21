@@ -1,21 +1,17 @@
-# Laura's Portfolio Project
+# Laura's Portfolio
 
-## Making a small change as a test
+Welcome to the repo for my personal website and portfolio. I'm testing a new way
+of putting this website together, using Grav CMS and my own custom page templates.
 
-## Project setup
+Check out the live website at [laurajael.com](https://laurajael.com/)
 
-```
-npm install
-```
+## Website Sections
 
-### Compiles and hot-reloads for development
+- Teaching
+- Cartography
+- Charts and Graphs
 
-```
-npm run serve
-```
+## Useful Pages
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
+- Open Data Sources
+- [Student Work on Medium](https://medium.com/fiu-news-visualization)
