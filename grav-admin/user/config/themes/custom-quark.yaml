@@ -1,0 +1,21 @@
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - 'user://themes/custom-quark'
+         - 'user://themes/quark'
+
+enabled: true
+production-mode: false
+grid-size: grid-lg
+header-fixed: true
+header-animated: true
+header-dark: true
+header-transparent: false
+sticky-footer: true
+blog-page: '/blog'
+spectre:
+  exp: true
+  icons: true

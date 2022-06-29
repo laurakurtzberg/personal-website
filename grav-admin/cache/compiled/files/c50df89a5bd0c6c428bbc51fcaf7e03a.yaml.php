@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/system/blueprints/config/system.yaml',
-    'modified' => 1650939307,
+    'modified' => 1655241040,
     'size' => 57253,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',

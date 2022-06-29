@@ -2,16 +2,16 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/config/site.yaml',
-    'modified' => 1650939307,
-    'size' => 160,
+    'modified' => 1656457524,
+    'size' => 188,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Laura\'s Personal Website',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@example.com'
+            'name' => 'Laura Kurtzberg',
+            'email' => ''
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'Laura Kurtzberg has a personal portfolio and communication website, and this is it'
         ]
     ]
 ];

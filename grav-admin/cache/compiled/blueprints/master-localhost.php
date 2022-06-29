@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1653344589,
-    'checksum' => 'f7b0cd6a0bd780a056f4364098693356',
+    'timestamp' => 1656457529,
+    'checksum' => 'b8b5e9d03915f434366000e6e0d651ae',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -13,31 +13,31 @@ return [
         'system/blueprints/config' => [
             'backups' => [
                 'file' => 'system/blueprints/config/backups.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'scheduler' => [
                 'file' => 'system/blueprints/config/scheduler.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ]
         ],
         'user/plugins' => [
@@ -61,6 +61,10 @@ return [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1650939307
             ],
+            'plugins/devtools' => [
+                'file' => 'user/plugins/devtools/blueprints.yaml',
+                'modified' => 1635265886
+            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
                 'modified' => 1650939307
@@ -78,6 +82,10 @@ return [
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
                 'modified' => 1650939308
+            ],
+            'themes/custom-quark' => [
+                'file' => 'user/themes/custom-quark/blueprints.yaml',
+                'modified' => 1656091283
             ]
         ]
     ],
@@ -4193,6 +4201,43 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.devtools' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.devtools.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.devtools.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.devtools.collision_check' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_DEVTOOLS.COLLISION_CHECK',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.devtools.collision_check',
+                'validation' => 'strict'
+            ],
             'plugins.error' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5190,6 +5235,13 @@ return [
                 ],
                 'name' => 'themes.quark.spectre.icons',
                 'validation' => 'loose'
+            ],
+            'themes.custom-quark' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    
+                ]
             ]
         ],
         'rules' => [
@@ -5658,6 +5710,10 @@ return [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
                 ],
+                'devtools' => [
+                    'enabled' => 'plugins.devtools.enabled',
+                    'collision_check' => 'plugins.devtools.collision_check'
+                ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',
                     'routes' => [
@@ -5767,7 +5823,8 @@ return [
                         'exp' => 'themes.quark.spectre.exp',
                         'icons' => 'themes.quark.spectre.icons'
                     ]
-                ]
+                ],
+                'custom-quark' => 'themes.custom-quark'
             ]
         ],
         'dynamic' => [

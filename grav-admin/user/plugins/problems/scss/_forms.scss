@@ -122,7 +122,7 @@ textarea.form-input {
   &[size],
   &[multiple] {
     height: auto;
-    
+
     option {
       padding: $unit-h $unit-1;
     }
@@ -197,7 +197,7 @@ textarea.form-input {
   line-height: $line-height;
   margin: ($control-size - $control-size-sm) / 2 0;
   min-height: 1.2rem;
-  padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
+  padding: calc(($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
   position: relative;
 
   input {
@@ -447,7 +447,7 @@ textarea.form-input {
     .form-icon {
       border-color: $error-color;
     }
-    
+
     input {
       &:checked + .form-icon {
         background: $error-color;

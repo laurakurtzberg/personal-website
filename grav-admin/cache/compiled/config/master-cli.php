@@ -1,55 +1,67 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1653344301,
-    'checksum' => '7e75b03530de3c4cc819312111487261',
+    'timestamp' => 1656457526,
+    'checksum' => '9472b8d3f2d4437170394c521bc10c86',
     'files' => [
         'user/config' => [
+            'media' => [
+                'file' => 'user/config/media.yaml',
+                'modified' => 1653344588
+            ],
             'security' => [
                 'file' => 'user/config/security.yaml',
                 'modified' => 1653344277
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1650939307
+                'modified' => 1656457524
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1650939307
+                'modified' => 1656289457
+            ],
+            'themes/custom-quark' => [
+                'file' => 'user/config/themes/custom-quark.yaml',
+                'modified' => 1656104149
+            ],
+            'themes/quark' => [
+                'file' => 'user/config/themes/quark.yaml',
+                'modified' => 1654020159
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1653344291
+                'modified' => 1656090424
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1650939307
+                'modified' => 1655241040
             ]
         ],
         'user/plugins' => [
@@ -73,6 +85,10 @@ return [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1650939308
             ],
+            'plugins/devtools' => [
+                'file' => 'user/plugins/devtools/devtools.yaml',
+                'modified' => 1635265886
+            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
                 'modified' => 1650939307
@@ -89,14 +105,18 @@ return [
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1650939308
+                'modified' => 1656091260
+            ],
+            'themes/custom-quark' => [
+                'file' => 'user/themes/custom-quark/custom-quark.yaml',
+                'modified' => 1656122683
             ]
         ]
     ],
     'data' => [
         'themes' => [
             'quark' => [
-                'enabled' => true,
+                'enabled' => false,
                 'production-mode' => true,
                 'grid-size' => 'grid-lg',
                 'header-fixed' => true,
@@ -108,6 +128,40 @@ return [
                 'spectre' => [
                     'exp' => false,
                     'icons' => false
+                ],
+                'custom_logo' => [
+                    
+                ],
+                'custom_logo_mobile' => [
+                    
+                ]
+            ],
+            'custom-quark' => [
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'prefixes' => [
+                                '' => [
+                                    0 => 'user://themes/custom-quark',
+                                    1 => 'user://themes/quark'
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                'enabled' => true,
+                'production-mode' => false,
+                'grid-size' => 'grid-lg',
+                'header-fixed' => true,
+                'header-animated' => true,
+                'header-dark' => true,
+                'header-transparent' => false,
+                'sticky-footer' => true,
+                'blog-page' => '/blog',
+                'spectre' => [
+                    'exp' => true,
+                    'icons' => true
                 ]
             ]
         ],
@@ -269,6 +323,10 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'devtools' => [
+                'enabled' => true,
+                'collision_check' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -3767,18 +3825,18 @@ node_modules'
             'salt' => 'Tl0Qv7Js5kioy3'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Laura\'s Personal Website',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Laura Kurtzberg',
+                'email' => ''
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Laura Kurtzberg has a personal portfolio and communication website, and this is it'
             ],
             'summary' => [
                 'enabled' => true,
@@ -3830,11 +3888,11 @@ node_modules'
             ],
             'home' => [
                 'alias' => '/home',
-                'hide_in_urls' => false
+                'hide_in_urls' => true
             ],
             'pages' => [
                 'type' => 'regular',
-                'theme' => 'quark',
+                'theme' => 'custom-quark',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -4017,7 +4075,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
@@ -4077,8 +4136,14 @@ node_modules'
         'versions' => [
             'core' => [
                 'grav' => [
-                    'version' => '1.7.33',
-                    'schema' => '1.7.0_2020-11-20_1'
+                    'version' => '1.7.34',
+                    'schema' => '1.7.0_2020-11-20_1',
+                    'history' => [
+                        0 => [
+                            'version' => '1.7.34',
+                            'date' => '2022-06-24 17:07:04'
+                        ]
+                    ]
                 ]
             ]
         ]

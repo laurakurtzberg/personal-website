@@ -1,0 +1,51 @@
+#header {
+  width: 100%;
+  height: $header-height-small;
+  border-bottom: 1px solid rgba($gray-color, 0.2);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  background: $light-color;
+  color: $dark-color;
+
+  .header-dark &:not(.scrolled) {
+    background: $header-color-dark;
+    color: $dark-color;
+    a {
+      color: rgba($light-color, 0.7) !important;
+    }
+    a.active {
+      color: $light-color !important;
+    }
+    .dropmenu ul ul a {
+        color: $dark-color !important;
+    }
+    .logo svg path {
+      fill: $light-color;
+    }
+  }
+
+  .header-dark.header-transparent &:not(.scrolled) {
+    background: rgba(#000, 0.05);
+  }
+
+  .header-transparent &:not(.scrolled) {
+    background: rgba(#fff, 0.05);
+  }
+
+  .navbar-section {
+    height: $header-height-small;
+  }
+
+  // Fixed Header solution
+  .header-fixed & {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.login-status-wrapper {
+  white-space: nowrap;
+}

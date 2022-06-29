@@ -33,11 +33,11 @@
     }
 }
 
-/*@media screen and (min-width: 1200px) {*/
-    /*.bricklayer-column-sizer {*/
-        /*width: 33.33333%;*/
-    /*}*/
-/*}*/
+@media screen and (min-width: 1200px) {
+    .bricklayer-column-sizer {
+        width: 33.33333%;
+    }
+}
 
 .bricklayer-column {
     -webkit-box-flex: 1;
