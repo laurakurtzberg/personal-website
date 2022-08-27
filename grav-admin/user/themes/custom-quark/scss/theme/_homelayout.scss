@@ -1,6 +1,11 @@
+html {
+  background-color: #fff1e6;
+}
+
 section#body-wrapper {
   display: flex;
-
+  background-color: #fff1e6;
+  
   .container {
     padding: 0;
 
@@ -16,12 +21,22 @@ section#body-wrapper {
 }
 
 section.aboutme {
-  background-color: #ccc;
-  min-height: 200px;
+  min-height: 400px;
   min-width: 200px;
-  max-width: 25%;
+  padding: 20px;
+  padding-top: 0;
+  max-width: 35%;
+
+  h1 {
+    clear: both;
+  }
+
+  @include breakpoint(md) {
+    max-width: 50%;
+  }
 
   @include breakpoint(sm) {
+    width: 100%;
     max-width: 100%;
   }
 
@@ -29,7 +44,7 @@ section.aboutme {
     float: left;
     width: 200px;
     height: 250px;
-    border: 1px solid black;
+    border: 2px solid #ccd5ae;
     margin: 15px;
     border-radius: 10px;
     background-image: url('../images/me-dale.jpg');
@@ -50,6 +65,9 @@ section.aboutme {
 
 .blog-items.container.grid-lg {
   max-width: 100%;
+  h5.p-name a {
+    color: #ed9c68;
+  }
 }
 
 section.navbar-container {

@@ -10,7 +10,7 @@
   color: $dark-color;
 
   .header-dark &:not(.scrolled) {
-    background: $header-color-dark;
+    background: darken($purple-grey, 18%);
     color: $dark-color;
     a {
       color: rgba($light-color, 0.7) !important;

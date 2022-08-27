@@ -136,7 +136,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   font-family: "Asul", sans-serif;
-  color: #3a414e;
+  color: #43333f;
 }
 
 h1, .h1 {
@@ -565,7 +565,7 @@ form .form-group:not(.form-field-toggleable) .checkboxes label:before {
   color: #454d5d;
 }
 .header-dark #header:not(.scrolled) {
-  background: #222;
+  background: #2c2129;
   color: #454d5d;
 }
 .header-dark #header:not(.scrolled) a {
@@ -600,21 +600,26 @@ form .form-group:not(.form-field-toggleable) .checkboxes label:before {
 }
 
 #footer {
+  background: #dfa47a;
+  color: #60495a;
+  padding: 1rem 1rem 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  color: black;
-  padding: 1rem 1rem 0;
-  text-align: left;
+}
+#footer p.copyright {
+  width: 50%;
 }
 #footer .creative-links-container {
   display: flex;
-  border: 1px solid black;
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 #footer .creative-links-container .creative-link {
-  padding: 20px;
+  padding-left: 20px;
 }
 
 .dropmenu ul {
@@ -857,8 +862,13 @@ ul.pagination {
   flex-direction: row-reverse;
 }
 
+html {
+  background-color: #fff1e6;
+}
+
 section#body-wrapper {
   display: flex;
+  background-color: #fff1e6;
 }
 section#body-wrapper .container {
   padding: 0;
@@ -875,13 +885,23 @@ section#body-wrapper .container {
 }
 
 section.aboutme {
-  background-color: #ccc;
-  min-height: 200px;
+  min-height: 400px;
   min-width: 200px;
-  max-width: 25%;
+  padding: 20px;
+  padding-top: 0;
+  max-width: 35%;
+}
+section.aboutme h1 {
+  clear: both;
+}
+@media (max-width: 840px) {
+  section.aboutme {
+    max-width: 50%;
+  }
 }
 @media (max-width: 600px) {
   section.aboutme {
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -889,7 +909,7 @@ section.aboutme .mypic-container {
   float: left;
   width: 200px;
   height: 250px;
-  border: 1px solid black;
+  border: 2px solid #ccd5ae;
   margin: 15px;
   border-radius: 10px;
   background-image: url("../images/me-dale.jpg");
@@ -910,6 +930,9 @@ section.aboutme .mypic-container {
 
 .blog-items.container.grid-lg {
   max-width: 100%;
+}
+.blog-items.container.grid-lg h5.p-name a {
+  color: #ed9c68;
 }
 
 section.navbar-container {

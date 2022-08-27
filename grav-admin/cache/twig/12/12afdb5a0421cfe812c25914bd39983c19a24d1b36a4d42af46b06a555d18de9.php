@@ -27,8 +27,8 @@ class __TwigTemplate_a237b53a06151017366b685bd59610c50f7a33f0a7a1cc0f81ba55c99f4
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<section id=\"footer\" class=\"section bg-gray\">
-        <p>&copy; Laura Kurtzberg 2022</p>
+        echo "<section id=\"footer\" class=\"section\">
+        <p class=\"copyright\">&copy; Laura Kurtzberg 2022</p>
 
         <div class=\"creative-links-container\">
           <p class=\"creative-link\">Observable</p>
@@ -60,8 +60,8 @@ class __TwigTemplate_a237b53a06151017366b685bd59610c50f7a33f0a7a1cc0f81ba55c99f4
 
     public function getSourceContext()
     {
-        return new Source("<section id=\"footer\" class=\"section bg-gray\">
-        <p>&copy; Laura Kurtzberg 2022</p>
+        return new Source("<section id=\"footer\" class=\"section\">
+        <p class=\"copyright\">&copy; Laura Kurtzberg 2022</p>
 
         <div class=\"creative-links-container\">
           <p class=\"creative-link\">Observable</p>
