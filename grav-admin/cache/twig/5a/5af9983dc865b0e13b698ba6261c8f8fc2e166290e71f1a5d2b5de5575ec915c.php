@@ -234,7 +234,7 @@ class __TwigTemplate_9fc99ef5a5199082e54c71c3f601a4fbb18c07ce225fa93ec307f71a978
     {
         // line 43
         echo "        <section id=\"header\" class=\"section\">
-            <section class=\"container ";
+            <section class=\"navbar-container ";
         // line 44
         echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
         echo "\">
@@ -413,7 +413,7 @@ class __TwigTemplate_9fc99ef5a5199082e54c71c3f601a4fbb18c07ce225fa93ec307f71a978
     <div id=\"page-wrapper\">
     {% block header %}
         <section id=\"header\" class=\"section\">
-            <section class=\"container {{ grid_size }}\">
+            <section class=\"navbar-container {{ grid_size }}\">
                 <nav class=\"navbar\">
                     <section class=\"navbar-section logo\">
                         {% include 'partials/logo.html.twig' %}

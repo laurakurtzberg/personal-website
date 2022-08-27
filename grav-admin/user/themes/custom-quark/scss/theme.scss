@@ -3,7 +3,7 @@
 @import 'spectre/variables';
 @import 'spectre/mixins';
 
-// New Css
+// New fonts file
 @import 'fonts';
 
 @import '../../quark/scss/theme/mixins';
@@ -14,9 +14,12 @@
 @import '../../quark/scss/theme/animation';
 
 @import 'theme/header';
-@import '../../quark/scss/theme/footer';
+@import 'theme/footer';
 @import 'theme/menu';
 
 // Extra Skeleton Styling
 @import '../../quark/scss/theme/blog';
 @import '../../quark/scss/theme/onepage';
+
+//Other new css rules
+@import 'theme/homelayout';

@@ -1,0 +1,44 @@
+{% extends 'partials/base.html.twig' %}
+{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% set collection = page.collection() %}
+{% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/bricklayer.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.add('theme://js/bricklayer.min.js') %}
+    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
+{% endblock %}
+
+{% block body %}
+    <section id="body-wrapper" class="section blog-listing">
+
+    {% block aboutmesidebar %}
+      {% include 'partials/aboutmesidebar.html.twig' with {content: page.content} %}
+    {% endblock %}
+
+        <section class="blog-items container {{ grid_size }}">
+
+        {% embed 'partials/layout.html.twig' with {blog: page} %}
+            {% block item %}
+
+                <div class="bricklayer">
+                {% for child in collection %}
+                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                {% endfor %}
+                </div>
+
+            {% endblock %}
+
+        {% endembed %}
+        </section>
+    </section>
+    <script>
+        //Bricklayer
+        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+    </script>
+{% endblock %}

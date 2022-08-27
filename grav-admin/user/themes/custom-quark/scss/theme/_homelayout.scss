@@ -1,0 +1,57 @@
+section#body-wrapper {
+  display: flex;
+
+  .container {
+    padding: 0;
+
+    @include breakpoint(sm) {
+      padding: 2rem 0;
+    }
+
+  }
+
+  @include breakpoint(sm) {
+    flex-direction: column;
+  }
+}
+
+section.aboutme {
+  background-color: #ccc;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 25%;
+
+  @include breakpoint(sm) {
+    max-width: 100%;
+  }
+
+  .mypic-container {
+    float: left;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 10px;
+    background-image: url('../images/me-dale.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 150%;
+  }
+}
+
+.blog-listing .bricklayer-column {
+  padding-left: 25px;
+  padding-right: 0;
+
+  @include breakpoint(sm) {
+    padding-left: 0;
+  }
+}
+
+.blog-items.container.grid-lg {
+  max-width: 100%;
+}
+
+section.navbar-container {
+  max-width: 100%;
+}
