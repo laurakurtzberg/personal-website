@@ -5,7 +5,7 @@ html {
 section#body-wrapper {
   display: flex;
   background-color: #fff1e6;
-  
+
   .container {
     padding: 0;
 
@@ -29,6 +29,10 @@ section.aboutme {
 
   h1 {
     clear: both;
+
+    @include breakpoint(md) {
+      font-size: 3em;
+    }
   }
 
   @include breakpoint(md) {
@@ -38,6 +42,7 @@ section.aboutme {
   @include breakpoint(sm) {
     width: 100%;
     max-width: 100%;
+    text-align: center;
   }
 
   .mypic-container {
@@ -46,11 +51,17 @@ section.aboutme {
     height: 250px;
     border: 2px solid #ccd5ae;
     margin: 15px;
-    border-radius: 10px;
-    background-image: url('../images/me-dale.jpg');
+    border-radius: 0.1rem;
+    background-image: url('../images/MY.PORTRAIT.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
+
+    @include breakpoint(sm) {
+      float: none;
+      display: block;
+      margin: auto;
+    }
   }
 }
 
@@ -68,6 +79,10 @@ section.aboutme {
   h5.p-name a {
     color: #ed9c68;
   }
+}
+
+.blog-listing .card {
+    border: 8px solid white;
 }
 
 section.navbar-container {

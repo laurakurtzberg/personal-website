@@ -13,13 +13,13 @@
 @import '../../quark/scss/theme/mobile';
 @import '../../quark/scss/theme/animation';
 
-@import 'theme/header';
-@import 'theme/footer';
-@import 'theme/menu';
-
 // Extra Skeleton Styling
 @import '../../quark/scss/theme/blog';
 @import '../../quark/scss/theme/onepage';
 
-//Other new css rules
+//CSS rules to override in my custom theme
+@import 'theme/header';
+@import 'theme/footer';
+@import 'theme/menu';
 @import 'theme/homelayout';
+@import 'theme/postpage';

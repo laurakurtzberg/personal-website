@@ -895,6 +895,11 @@ section.aboutme h1 {
   clear: both;
 }
 @media (max-width: 840px) {
+  section.aboutme h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 840px) {
   section.aboutme {
     max-width: 50%;
   }
@@ -903,6 +908,7 @@ section.aboutme h1 {
   section.aboutme {
     width: 100%;
     max-width: 100%;
+    text-align: center;
   }
 }
 section.aboutme .mypic-container {
@@ -912,10 +918,17 @@ section.aboutme .mypic-container {
   border: 2px solid #ccd5ae;
   margin: 15px;
   border-radius: 10px;
-  background-image: url("../images/me-dale.jpg");
+  background-image: url("../images/MY.PORTRAIT.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 100%;
+}
+@media (max-width: 600px) {
+  section.aboutme .mypic-container {
+    float: none;
+    display: block;
+    margin: auto;
+  }
 }
 
 .blog-listing .bricklayer-column {

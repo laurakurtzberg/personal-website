@@ -6,10 +6,11 @@
   font-size: 0.7rem;
   font-weight: 700;
 
-  background: $light-color;
+  background: darken($purple-grey, 18%);
   color: $dark-color;
+}
 
-  .header-dark &:not(.scrolled) {
+.header-dark {
     background: darken($purple-grey, 18%);
     color: $dark-color;
     a {
@@ -26,11 +27,11 @@
     }
   }
 
-  .header-dark.header-transparent &:not(.scrolled) {
+  .header-dark.header-transparent {
     background: rgba(#000, 0.05);
   }
 
-  .header-transparent &:not(.scrolled) {
+  .header-transparent {
     background: rgba(#fff, 0.05);
   }
 
@@ -39,12 +40,12 @@
   }
 
   // Fixed Header solution
-  .header-fixed & {
+  .header-fixed {
     position: fixed;
     top: 0;
     z-index: 2;
   }
-}
+
 
 .login-status-wrapper {
   white-space: nowrap;

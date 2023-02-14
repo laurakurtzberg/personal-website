@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1661563776,
-    'checksum' => '365322f3ed94248e69aec2a02361b160',
+    'timestamp' => 1676391508,
+    'checksum' => 'b72b5bdf91eb01db763216bc64b2b2ac',
     'files' => [
         'user/config' => [
             'media' => [
@@ -57,7 +57,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1655241040
+                'modified' => 1676391502
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
@@ -109,7 +109,7 @@ return [
             ],
             'themes/custom-quark' => [
                 'file' => 'user/themes/custom-quark/custom-quark.yaml',
-                'modified' => 1656122683
+                'modified' => 1676331806
             ]
         ]
     ],
@@ -3841,7 +3841,7 @@ node_modules'
             'summary' => [
                 'enabled' => true,
                 'format' => 'short',
-                'size' => 300,
+                'size' => 100,
                 'delimiter' => '==='
             ],
             'redirects' => NULL,

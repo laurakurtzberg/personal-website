@@ -52,7 +52,7 @@ class __TwigTemplate_a6775c16645de1b8ea57292215be2f50cf7fd9cdee22749cb15cb57f487
         <div class=\"card-title\">
         ";
         // line 12
-        $this->loadTemplate("partials/blog/title.html.twig", "partials/blog-list-item.html.twig", 12)->display(twig_array_merge($context, ["title_level" => "h5"]));
+        $this->loadTemplate("partials/blog/title.html.twig", "partials/blog-list-item.html.twig", 12)->display(twig_array_merge($context, ["title_level" => "h3"]));
         // line 13
         echo "        </div>
     </div>
@@ -120,7 +120,7 @@ class __TwigTemplate_a6775c16645de1b8ea57292215be2f50cf7fd9cdee22749cb15cb57f487
         <div class=\"card-subtitle text-gray\">
     </div>
         <div class=\"card-title\">
-        {% include 'partials/blog/title.html.twig' with {title_level: 'h5'} %}
+        {% include 'partials/blog/title.html.twig' with {title_level: 'h3'} %}
         </div>
     </div>
     <div class=\"card-body\">

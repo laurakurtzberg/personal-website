@@ -9,4 +9,9 @@ content:
 Laura Kurtzberg
 ===============
 
-Welcome to my personal landing page! My name is Laura Kurtzberg, and lately I've been interested in defining what I do. I've settled on "digital cartographer" to explain that I make maps for the internet. I'm often looking to tell a story when I work on a mapping project, and I work closely with journalists and science communicators. I also do a lot of other things, like data visualization design, news app development, and teaching at Florida International University's School of Journalism & Communication.
+Hi, I'm an **information designer** and **cartographer**. I make interactive maps, data visualizations, and web applications
+for news and storytelling. I often work closely with journalists and scientists to create stories with an environmental
+focus. My work has been published on Ambiental Media, InfoAmazonia, and Mongabay.
+
+I am also a Professor of Practice at Florida International University's School of Journalism & Communication,
+where I teach courses on data visualization and technology.

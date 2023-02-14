@@ -13,7 +13,7 @@ metadata:
 summary:
   enabled: true                             # enable or disable summary of page
   format: short                             # long = summary delimiter will be ignored; short = use the first occurrence of delimiter or size
-  size: 300                                 # Maximum length of summary (characters)
+  size: 150                                 # Maximum length of summary (characters)
   delimiter: ===                            # The summary delimiter
 
 redirects:
