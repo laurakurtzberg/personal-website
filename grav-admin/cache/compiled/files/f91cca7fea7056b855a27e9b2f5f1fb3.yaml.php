@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/config/site.yaml',
-    'modified' => 1656457524,
-    'size' => 188,
+    'modified' => 1678985943,
+    'size' => 189,
     'data' => [
-        'title' => 'Laura\'s Personal Website',
+        'title' => 'Laura\'s Portfolio Website',
         'author' => [
             'name' => 'Laura Kurtzberg',
             'email' => ''

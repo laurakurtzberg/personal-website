@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1676391515,
-    'checksum' => '3865bfc19a405032819c24e254ef67ec',
+    'timestamp' => 1678988947,
+    'checksum' => '545b9fbab2bd1b76362db76bcf7cfcd7',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1656457524
+                'modified' => 1678985943
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
@@ -109,7 +109,7 @@ return [
             ],
             'themes/custom-quark' => [
                 'file' => 'user/themes/custom-quark/custom-quark.yaml',
-                'modified' => 1676331806
+                'modified' => 1678988946
             ]
         ]
     ],
@@ -3825,7 +3825,7 @@ node_modules'
             'salt' => 'Tl0Qv7Js5kioy3'
         ],
         'site' => [
-            'title' => 'Laura\'s Personal Website',
+            'title' => 'Laura\'s Portfolio Website',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Laura Kurtzberg',

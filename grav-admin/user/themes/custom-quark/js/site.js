@@ -4,9 +4,9 @@ function scrollHeader() {
     // Has scrolled class on header
     var zvalue = $(document).scrollTop();
     if ( zvalue > 75 )
-        $("#header").addClass("new-scrolled");
+        $("#header").addClass("scrolled");
     else
-        $("#header").removeClass("new-scrolled");
+        $("#header").removeClass("scrolled");
 }
 
 function parallaxBackground() {

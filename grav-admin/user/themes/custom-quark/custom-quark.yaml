@@ -10,7 +10,7 @@ streams:
 enabled: true
 production-mode: true
 grid-size: grid-lg
-header-fixed: true
+header-fixed: false
 header-animated: true
 header-dark: true
 header-transparent: false

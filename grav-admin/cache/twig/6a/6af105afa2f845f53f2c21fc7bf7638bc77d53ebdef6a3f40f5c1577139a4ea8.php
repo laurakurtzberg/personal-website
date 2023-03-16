@@ -36,7 +36,7 @@ class __TwigTemplate_14db97e4b059e80dc28589df65c53d3bcf5808415ba34efff0f2d03c33e
             echo "    <div class=\"content-title text-center\">
         ";
             // line 5
-            $this->loadTemplate("partials/blog/title.html.twig", "partials/blog-item.html.twig", 5)->display(twig_array_merge($context, ["title_level" => "h2"]));
+            $this->loadTemplate("partials/blog/title.html.twig", "partials/blog-item.html.twig", 5)->display(twig_array_merge($context, ["title_level" => "h3"]));
             // line 6
             echo "        ";
             if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "subtitle", [])) {
@@ -132,7 +132,7 @@ class __TwigTemplate_14db97e4b059e80dc28589df65c53d3bcf5808415ba34efff0f2d03c33e
 
 {% if not hero_image_name %}
     <div class=\"content-title text-center\">
-        {% include 'partials/blog/title.html.twig' with {title_level: 'h2'} %}
+        {% include 'partials/blog/title.html.twig' with {title_level: 'h3'} %}
         {% if page.header.subtitle %}
         <h3>{{ page.header.subtitle }}</h3>
         {% endif %}

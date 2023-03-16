@@ -3,8 +3,8 @@ html {
 }
 
 section#body-wrapper {
-  display: flex;
-  background-color: #fff1e6;
+    display: flex;
+    background-color: #fff1e6;
 
   .container {
     padding: 0;
@@ -79,10 +79,6 @@ section.aboutme {
   h5.p-name a {
     color: #ed9c68;
   }
-}
-
-.blog-listing .card {
-    border: 8px solid white;
 }
 
 section.navbar-container {

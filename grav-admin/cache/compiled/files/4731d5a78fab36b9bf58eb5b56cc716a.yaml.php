@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://custom-quark/custom-quark.yaml',
-    'modified' => 1676331806,
-    'size' => 370,
+    'modified' => 1678988946,
+    'size' => 371,
     'data' => [
         'streams' => [
             'schemes' => [
@@ -21,7 +21,7 @@ return [
         'enabled' => true,
         'production-mode' => true,
         'grid-size' => 'grid-lg',
-        'header-fixed' => true,
+        'header-fixed' => false,
         'header-animated' => true,
         'header-dark' => true,
         'header-transparent' => false,

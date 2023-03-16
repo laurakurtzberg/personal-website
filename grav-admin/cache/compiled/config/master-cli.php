@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1676391508,
-    'checksum' => 'b72b5bdf91eb01db763216bc64b2b2ac',
+    'timestamp' => 1678988395,
+    'checksum' => 'f110f37fd1c13e03bba6ada4e8a77ff4',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1656457524
+                'modified' => 1678985943
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
@@ -57,7 +57,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1676391502
+                'modified' => 1676391514
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
@@ -109,7 +109,7 @@ return [
             ],
             'themes/custom-quark' => [
                 'file' => 'user/themes/custom-quark/custom-quark.yaml',
-                'modified' => 1676331806
+                'modified' => 1678987672
             ]
         ]
     ],
@@ -3825,7 +3825,7 @@ node_modules'
             'salt' => 'Tl0Qv7Js5kioy3'
         ],
         'site' => [
-            'title' => 'Laura\'s Personal Website',
+            'title' => 'Laura\'s Portfolio Website',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Laura Kurtzberg',
@@ -3841,7 +3841,7 @@ node_modules'
             'summary' => [
                 'enabled' => true,
                 'format' => 'short',
-                'size' => 100,
+                'size' => 150,
                 'delimiter' => '==='
             ],
             'redirects' => NULL,
