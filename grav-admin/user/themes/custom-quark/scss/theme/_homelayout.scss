@@ -1,86 +1,102 @@
 html {
-  background-color: #fff1e6;
+    background-color: #fff1e6;
 }
 
 section#body-wrapper {
     display: flex;
     background-color: #fff1e6;
 
-  .container {
-    padding: 0;
+    .container {
+        padding: 0;
 
-    @include breakpoint(sm) {
-      padding: 2rem 0;
+        @include breakpoint(sm) {
+            padding: 2rem 0;
+        }
+
     }
 
-  }
-
-  @include breakpoint(sm) {
-    flex-direction: column;
-  }
+    @include breakpoint(sm) {
+        flex-direction: column;
+    }
 }
 
 section.aboutme {
-  min-height: 400px;
-  min-width: 200px;
-  padding: 20px;
-  padding-top: 0;
-  max-width: 35%;
+    min-height: 400px;
+    min-width: 200px;
+    padding: 20px;
+    padding-top: 0;
+    max-width: 35%;
+    background: darken(#e4b28f, 2%);
+    border-radius: 0.1rem;
+    text-align: center;
 
-  h1 {
-    clear: both;
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+        clear: both;
+
+        @include breakpoint(md) {
+            font-size: 3em;
+        }
+    }
+
+    p {
+        width: 88%;
+        margin: auto;
+        text-align: left;
+        padding-bottom: 20px;
+        color: darken(#60495a, 18%);
+    }
 
     @include breakpoint(md) {
-      font-size: 3em;
+        max-width: 50%;
     }
-  }
-
-  @include breakpoint(md) {
-    max-width: 50%;
-  }
-
-  @include breakpoint(sm) {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .mypic-container {
-    float: left;
-    width: 200px;
-    height: 250px;
-    border: 2px solid #ccd5ae;
-    margin: 15px;
-    border-radius: 0.1rem;
-    background-image: url('../images/MY.PORTRAIT.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
 
     @include breakpoint(sm) {
-      float: none;
-      display: block;
-      margin: auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
-  }
+
+    .mypic-container {
+        height: 300px;
+        border: 2px solid #ccd5ae;
+        margin: 4% auto 0 auto;
+        border-radius: 0.1rem;
+        background-image: url('../images/LaurasPortrait2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @include breakpoint(sm) {
+            float: none;
+            display: block;
+            margin: 6% auto 0 auto;
+        }
+
+        @include breakpoint(md) {
+            margin: 8% auto 0 auto;
+        }
+    }
 }
 
 .blog-listing .bricklayer-column {
-  padding-left: 25px;
-  padding-right: 0;
+    padding-left: 25px;
+    padding-right: 0;
 
-  @include breakpoint(sm) {
-    padding-left: 0;
-  }
+    @include breakpoint(sm) {
+        padding-left: 0;
+    }
 }
 
 .blog-items.container.grid-lg {
-  max-width: 100%;
-  h5.p-name a {
-    color: #ed9c68;
-  }
+    max-width: 100%;
+
+    h5.p-name a {
+        color: #ed9c68;
+    }
 }
 
 section.navbar-container {
-  max-width: 100%;
+    max-width: 100%;
 }

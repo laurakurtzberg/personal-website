@@ -814,7 +814,7 @@ body.header-fixed.header-animated #header.scrolled ~ .mobile-menu .button_contai
 }
 
 #footer {
-  background: #dfa47a;
+  border-top: 1px solid #60495a;
   color: #60495a;
   padding: 1rem 1rem 0;
   text-align: left;
@@ -890,6 +890,27 @@ body.header-fixed.header-animated #header.scrolled ~ .mobile-menu .button_contai
   display: inline-block;
 }
 
+.treemenu li a:focus,
+.treemenu li a.active {
+  color: white !important;
+}
+
+.treemenu li a:hover {
+  opacity: 0.6;
+}
+
+.mobile-menu .button_container {
+  top: 0.6rem;
+}
+.mobile-menu .button_container span {
+  background: white;
+}
+
+nav.overlay-menu ul li a {
+  color: white;
+  transition: all 0.5s;
+}
+
 html {
   background-color: #fff1e6;
 }
@@ -918,14 +939,26 @@ section.aboutme {
   padding: 20px;
   padding-top: 0;
   max-width: 35%;
+  background: #e2ac87;
+  border-radius: 0.1rem;
+  text-align: center;
 }
 section.aboutme h1 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
   clear: both;
 }
 @media (max-width: 840px) {
   section.aboutme h1 {
     font-size: 3em;
   }
+}
+section.aboutme p {
+  width: 88%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 20px;
+  color: #2c2129;
 }
 @media (max-width: 840px) {
   section.aboutme {
@@ -940,14 +973,12 @@ section.aboutme h1 {
   }
 }
 section.aboutme .mypic-container {
-  float: left;
-  width: 200px;
-  height: 250px;
+  height: 300px;
   border: 2px solid #ccd5ae;
-  margin: 15px;
+  margin: 4% auto 0 auto;
   border-radius: 0.1rem;
-  background-image: url("../images/MY.PORTRAIT.jpg");
-  background-position: bottom;
+  background-image: url("../images/LaurasPortrait2.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -955,7 +986,12 @@ section.aboutme .mypic-container {
   section.aboutme .mypic-container {
     float: none;
     display: block;
-    margin: auto;
+    margin: 6% auto 0 auto;
+  }
+}
+@media (max-width: 840px) {
+  section.aboutme .mypic-container {
+    margin: 8% auto 0 auto;
   }
 }
 
