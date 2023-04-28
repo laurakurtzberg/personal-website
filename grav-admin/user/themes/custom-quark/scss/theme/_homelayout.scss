@@ -1,10 +1,21 @@
+$washed-out-caramel: #fff1e6;
+$peachy-orange: #e4b28f;
+$orange: #ed9c68;
+$light-green: #ccd5ae;
+
 html {
-    background-color: #fff1e6;
+    background-color: $washed-out-caramel;
 }
 
-section#body-wrapper {
+a,
+a:visited {
+    color: white;
+}
+
+.header-fixed section#body-wrapper {
     display: flex;
-    background-color: #fff1e6;
+    background-color: $washed-out-caramel;
+    padding-bottom: 2rem;
 
     .container {
         padding: 0;
@@ -22,11 +33,12 @@ section#body-wrapper {
 
 section.aboutme {
     min-height: 400px;
+    height: 80%;
     min-width: 200px;
     padding: 20px;
     padding-top: 0;
     max-width: 35%;
-    background: darken(#e4b28f, 2%);
+    background: darken($peachy-orange, 2%);
     border-radius: 0.1rem;
     text-align: center;
 
@@ -45,7 +57,7 @@ section.aboutme {
         margin: auto;
         text-align: left;
         padding-bottom: 20px;
-        color: darken(#60495a, 18%);
+        color: darken($purple-grey, 18%);
     }
 
     @include breakpoint(md) {
@@ -60,7 +72,7 @@ section.aboutme {
 
     .mypic-container {
         height: 300px;
-        border: 2px solid #ccd5ae;
+        border: 2px solid $light-green;
         margin: 4% auto 0 auto;
         border-radius: 0.1rem;
         background-image: url('../images/LaurasPortrait2.jpg');
@@ -91,10 +103,6 @@ section.aboutme {
 
 .blog-items.container.grid-lg {
     max-width: 100%;
-
-    h5.p-name a {
-        color: #ed9c68;
-    }
 }
 
 section.navbar-container {

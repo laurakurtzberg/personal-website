@@ -834,6 +834,10 @@ body.header-fixed.header-animated #header.scrolled ~ .mobile-menu .button_contai
 #footer .creative-links-container .creative-link {
   padding-left: 20px;
 }
+#footer a,
+#footer a:visited {
+  color: #60495a;
+}
 
 .dropmenu ul {
   white-space: nowrap;
@@ -915,26 +919,33 @@ html {
   background-color: #fff1e6;
 }
 
-section#body-wrapper {
+a,
+a:visited {
+  color: white;
+}
+
+.header-fixed section#body-wrapper {
   display: flex;
   background-color: #fff1e6;
+  padding-bottom: 2rem;
 }
-section#body-wrapper .container {
+.header-fixed section#body-wrapper .container {
   padding: 0;
 }
 @media (max-width: 600px) {
-  section#body-wrapper .container {
+  .header-fixed section#body-wrapper .container {
     padding: 2rem 0;
   }
 }
 @media (max-width: 600px) {
-  section#body-wrapper {
+  .header-fixed section#body-wrapper {
     flex-direction: column;
   }
 }
 
 section.aboutme {
   min-height: 400px;
+  height: 80%;
   min-width: 200px;
   padding: 20px;
   padding-top: 0;
@@ -1008,9 +1019,6 @@ section.aboutme .mypic-container {
 .blog-items.container.grid-lg {
   max-width: 100%;
 }
-.blog-items.container.grid-lg h5.p-name a {
-  color: #ed9c68;
-}
 
 section.navbar-container {
   max-width: 100%;
@@ -1020,8 +1028,20 @@ span.blog-date {
   display: none;
 }
 
-h2.p-name a.u-url:visited {
-  color: mediumvioletred;
+.card .card-header h3 a {
+  color: #60495a;
+  font-size: 1.4em;
+}
+
+.subtitle-container h4.subtitle {
+  padding: 0 0.8rem 1rem 0.8rem;
+  margin-top: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.card-footer {
+  padding: 0;
 }
 
 /*# sourceMappingURL=theme.css.map */

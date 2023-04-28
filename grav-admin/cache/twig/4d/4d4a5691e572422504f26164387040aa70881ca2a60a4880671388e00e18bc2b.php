@@ -40,7 +40,7 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
             // line 5
             echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", []), "html", null, true);
             echo "\">";
-            echo $this->getAttribute($this->getAttribute(($context["image"] ?? null), "cropZoom", [0 => 800, 1 => 400], "method"), "html", []);
+            echo $this->getAttribute($this->getAttribute(($context["image"] ?? null), "cropZoom", [0 => 800, 1 => 540], "method"), "html", []);
             echo "</a>
     </div>
     ";
@@ -56,30 +56,12 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
         // line 13
         echo "        </div>
     </div>
-    <div class=\"card-body\">
-        ";
+    <div class=\"subtitle-container\">
+        <h4 class=\"subtitle\">";
         // line 16
-        if (($this->getAttribute(($context["page"] ?? null), "summary", []) != $this->getAttribute(($context["page"] ?? null), "content", []))) {
-            // line 17
-            echo "            ";
-            echo $this->getAttribute(($context["page"] ?? null), "summary", []);
-            echo "
-        ";
-        } else {
-            // line 19
-            echo "            ";
-            echo $this->getAttribute(($context["page"] ?? null), "content", []);
-            echo "
-        ";
-        }
-        // line 21
-        echo "    </div>
-    <div class=\"card-footer\">
-        ";
-        // line 23
-        $this->loadTemplate("partials/blog/taxonomy.html.twig", "partials/blog-list-item.html.twig", 23)->display($context);
-        // line 24
-        echo "    </div>
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "subtitle", []), "html", null, true);
+        echo "</h4>
+    </div>
 </div>
 ";
     }
@@ -96,7 +78,7 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
 
     public function getDebugInfo()
     {
-        return array (  82 => 24,  80 => 23,  76 => 21,  70 => 19,  64 => 17,  62 => 16,  57 => 13,  55 => 12,  49 => 8,  41 => 5,  38 => 4,  35 => 3,  33 => 2,  30 => 1,);
+        return array (  62 => 16,  57 => 13,  55 => 12,  49 => 8,  41 => 5,  38 => 4,  35 => 3,  33 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -113,7 +95,7 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
     {% set image = page.media.images|first %}
     {% if image %}
     <div class=\"card-image\">
-        <a href=\"{{ page.url }}\">{{ image.cropZoom(800,400).html|raw }}</a>
+        <a href=\"{{ page.url }}\">{{ image.cropZoom(800,540).html|raw }}</a>
     </div>
     {% endif %}
     <div class=\"card-header\">
@@ -123,15 +105,8 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
         {% include 'partials/blog/title.html.twig' with {title_level: 'h3'} %}
         </div>
     </div>
-    <div class=\"card-body\">
-        {% if page.summary != page.content %}
-            {{ page.summary|raw }}
-        {% else %}
-            {{ page.content|raw }}
-        {% endif %}
-    </div>
-    <div class=\"card-footer\">
-        {% include 'partials/blog/taxonomy.html.twig' %}
+    <div class=\"subtitle-container\">
+        <h4 class=\"subtitle\">{{ page.header.subtitle }}</h4>
     </div>
 </div>
 ", "partials/blog-list-item.html.twig", "/Users/laurak/Documents/personal-website/grav-admin/user/themes/custom-quark/templates/partials/blog-list-item.html.twig");

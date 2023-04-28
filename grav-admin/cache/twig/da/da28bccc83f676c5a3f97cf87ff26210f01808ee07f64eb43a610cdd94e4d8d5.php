@@ -31,10 +31,18 @@ class __TwigTemplate_89510e0fc9dbf62df9b24bb912b54737b46bce4a6cf4a2f9850dfb98120
         <p class=\"copyright\">&copy; Laura Kurtzberg 2022</p>
 
         <div class=\"creative-links-container\">
-          <p class=\"creative-link\">Observable</p>
-          <p class=\"creative-link\">Glitch</p>
-          <p class=\"creative-link\">Github</p>
-          <p class=\"creative-link\">Twitter</p>
+          <p class=\"creative-link\">
+              <a href=\"https://observablehq.com/@laurakurtzberg\">Observable</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://glitch.com/@laura.kurtzberg\">Glitch</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://github.com/laurakurtzberg\">Github</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://twitter.com/laurakurtzberg\">Twitter</a>
+          </p>
         </div>
 </section>
 ";
@@ -64,10 +72,18 @@ class __TwigTemplate_89510e0fc9dbf62df9b24bb912b54737b46bce4a6cf4a2f9850dfb98120
         <p class=\"copyright\">&copy; Laura Kurtzberg 2022</p>
 
         <div class=\"creative-links-container\">
-          <p class=\"creative-link\">Observable</p>
-          <p class=\"creative-link\">Glitch</p>
-          <p class=\"creative-link\">Github</p>
-          <p class=\"creative-link\">Twitter</p>
+          <p class=\"creative-link\">
+              <a href=\"https://observablehq.com/@laurakurtzberg\">Observable</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://glitch.com/@laura.kurtzberg\">Glitch</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://github.com/laurakurtzberg\">Github</a>
+          </p>
+          <p class=\"creative-link\">
+              <a href=\"https://twitter.com/laurakurtzberg\">Twitter</a>
+          </p>
         </div>
 </section>
 ", "partials/footer.html.twig", "/Users/laurak/Documents/personal-website/grav-admin/user/themes/custom-quark/templates/partials/footer.html.twig");
