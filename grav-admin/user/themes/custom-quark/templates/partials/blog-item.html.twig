@@ -9,6 +9,12 @@
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
+    
+    {% if page.header.story_link %}
+        <p class="story-link text-center">
+            <a href="{{ page.header.story_link }}" class="btn">{{ 'THEME_QUARK.BLOG.ITEM.READ_STORY'|t }}</a>
+        </p>
+    {% endif %}
     <div class="e-content">
         {{ page.content|raw }}
     </div>
@@ -19,11 +25,17 @@
 </div>
 
 <p class="prev-next text-center">
+     {% if not page.isFirst %}
+        <a class="btn" href="{{ page.nextSibling.url }}">
+            <i class="fa fa-angle-left"></i>
+            {{ 'THEME_QUARK.BLOG.ITEM.NEXT_POST'|t }} </a>
+    {% endif %}
+    
     {% if not page.isLast %}
-            <a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> {{ 'THEME_QUARK.BLOG.ITEM.PREV_POST'|t }}</a>
+            <a class="btn" href="{{ page.prevSibling.url }}"> {{ 'THEME_QUARK.BLOG.ITEM.PREV_POST'|t }}
+            <i class="fa fa-angle-right"></i>
+        </a>
     {% endif %}
 
-    {% if not page.isFirst %}
-        <a class="btn" href="{{ page.nextSibling.url }}">{{ 'THEME_QUARK.BLOG.ITEM.NEXT_POST'|t }} <i class="fa fa-angle-right"></i></a>
-    {% endif %}
+   
 </p>

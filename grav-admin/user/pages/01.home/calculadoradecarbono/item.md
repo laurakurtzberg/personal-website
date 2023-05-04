@@ -1,6 +1,6 @@
 ---
 title: Carbon Footprint
-pagelink: https://aquazonia.ambiental.media/
+story_link: https://www.nationalgeographicla.com/loquehacescuenta
 subtitle: A carbon footprint calculator for National Geographic Latin America
 tools: Vanilla JavaScript
 ---
@@ -10,3 +10,5 @@ I developed the code for a carbon footprint calculator in vanilla JavaScript as 
 The Ambiental Media team researched the impact of many everyday activities, including food choices, transportation, and planting trees. The calculator also takes socioeconomic factors into account, like income and country of residence. 
 
 Overall, the goal of this project was to encourage National Geographic's audience in Latin America to take action to lower their carbon footprint.
+
+![calculadora](calculadora7.png "calculadora")

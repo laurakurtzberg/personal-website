@@ -5,8 +5,9 @@ en:
     BLOG:
       ITEM:
         CONTINUE_READING: Continue reading...
-        NEXT_POST: Next Post
-        PREV_POST: Previous Post
+        NEXT_POST: Previous Project
+        PREV_POST: Next Project
+        READ_STORY: Read the Story
     SIDEBAR:
       SIMPLE_SEARCH:
         HEADLINE: Search
@@ -53,8 +54,9 @@ es:
     BLOG:
       ITEM:
         CONTINUE_READING: Continuar leyendo...
-        NEXT_POST: Siguiente Entrada
-        PREV_POST: Entrada Anterior
+        NEXT_POST: Entrada Anterior
+        PREV_POST: Siguiente Entrada 
+        READ_STORY: Leer la Historia
     SIDEBAR:
       SIMPLE_SEARCH:
         HEADLINE: Buscar

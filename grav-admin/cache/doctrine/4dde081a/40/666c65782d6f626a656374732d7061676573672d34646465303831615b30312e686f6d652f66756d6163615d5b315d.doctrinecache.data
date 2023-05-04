@@ -1,0 +1,7 @@
+1683165551
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"home/fumaca";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:12:"Smoke Screen";s:4:"link";s:59:"https://cortinadefumaca.ambiental.media/en-en-home-english/";s:8:"subtitle";s:81:"Demonstrating the connection between forest fires and deforestation in the Amazon";s:5:"tools";s:14:"Mabox.gl, QGIS";}s:11:"frontmatter";s:207:"title: 'Smoke Screen'
+link: 'https://cortinadefumaca.ambiental.media/en-en-home-english/'
+subtitle: 'Demonstrating the connection between forest fires and deforestation in the Amazon'
+tools: 'Mabox.gl, QGIS'";s:8:"markdown";s:56:"Cortina de Fumaça!
+
+[cortina6](cortina6.png "cortina6")";}s:7:"storage";a:6:{s:3:"key";s:11:"home/fumaca";s:11:"storage_key";s:14:"01.home/fumaca";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1683163280;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1683163280;}}s:8:"checksum";s:32:"3963edecd7f14de760029f6fca6bb2ec";}}

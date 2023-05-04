@@ -40,7 +40,7 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
             // line 5
             echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", []), "html", null, true);
             echo "\">";
-            echo $this->getAttribute($this->getAttribute(($context["image"] ?? null), "cropZoom", [0 => 800, 1 => 540], "method"), "html", []);
+            echo $this->getAttribute($this->getAttribute(($context["image"] ?? null), "cropZoom", [0 => 1200, 1 => 810], "method"), "html", []);
             echo "</a>
     </div>
     ";
@@ -95,7 +95,7 @@ class __TwigTemplate_8bc733ee17e1db4b511dbe78fba5379c312e1c06ad1313483fa0a214890
     {% set image = page.media.images|first %}
     {% if image %}
     <div class=\"card-image\">
-        <a href=\"{{ page.url }}\">{{ image.cropZoom(800,540).html|raw }}</a>
+        <a href=\"{{ page.url }}\">{{ image.cropZoom(1200,810).html|raw }}</a>
     </div>
     {% endif %}
     <div class=\"card-header\">

@@ -919,11 +919,6 @@ html {
   background-color: #fff1e6;
 }
 
-a,
-a:visited {
-  color: white;
-}
-
 .header-fixed section#body-wrapper {
   display: flex;
   background-color: #fff1e6;
@@ -953,6 +948,10 @@ section.aboutme {
   background: #e2ac87;
   border-radius: 0.1rem;
   text-align: center;
+}
+section.aboutme a,
+section.aboutme a:visited {
+  color: white;
 }
 section.aboutme h1 {
   font-size: 2.2rem;
@@ -1024,8 +1023,41 @@ section.navbar-container {
   max-width: 100%;
 }
 
+.mobile-menu .button_container span {
+  height: 3px;
+}
+
 span.blog-date {
   display: none;
+}
+
+.content-item h3.p-name {
+  font-size: 2.4rem;
+  color: #76330A;
+}
+.content-item h3.p-name a,
+.content-item h3.p-name a:visited {
+  color: #76330A;
+}
+
+.content-item .e-content p > a {
+  color: #76330A;
+}
+
+#item.extra-spacing .content-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.prev-next a.btn,
+.story-link a.btn {
+  color: #76330A;
+  border: 0.05rem solid #76330A;
+}
+
+.story-link a.btn:hover,
+.prev-next a.btn:hover {
+  background: #f9d1b9;
 }
 
 .card .card-header h3 a {

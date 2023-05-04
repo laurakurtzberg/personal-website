@@ -7,11 +7,6 @@ html {
     background-color: $washed-out-caramel;
 }
 
-a,
-a:visited {
-    color: white;
-}
-
 .header-fixed section#body-wrapper {
     display: flex;
     background-color: $washed-out-caramel;
@@ -41,6 +36,11 @@ section.aboutme {
     background: darken($peachy-orange, 2%);
     border-radius: 0.1rem;
     text-align: center;
+
+    a,
+    a:visited {
+        color: white;
+    }
 
     h1 {
         font-size: 2.2rem;
@@ -107,4 +107,8 @@ section.aboutme {
 
 section.navbar-container {
     max-width: 100%;
+}
+
+.mobile-menu .button_container span {
+    height: 3px;
 }

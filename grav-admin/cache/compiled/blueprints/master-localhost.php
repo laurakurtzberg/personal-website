@@ -1,43 +1,43 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1681844332,
-    'checksum' => '0c7036a9decb3c0eebfa7ae5270441a1',
+    'timestamp' => 1683156298,
+    'checksum' => '1067844ef4bad7f1d95b08b6fac7ae28',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
                 'file' => 'user/plugins/admin/blueprints/config/media.yaml',
-                'modified' => 1676831746
+                'modified' => 1679495310
             ]
         ],
         'system/blueprints/config' => [
             'backups' => [
                 'file' => 'system/blueprints/config/backups.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'scheduler' => [
                 'file' => 'system/blueprints/config/scheduler.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1677100906
+                'modified' => 1679520680
             ]
         ],
         'user/plugins' => [
@@ -55,7 +55,7 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1676831746
+                'modified' => 1679495310
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -1404,7 +1404,6 @@ return [
                     'file' => 'File',
                     'apc' => 'APC',
                     'apcu' => 'APCu',
-                    'xcache' => 'Xcache',
                     'memcache' => 'Memcache',
                     'memcached' => 'Memcached',
                     'wincache' => 'WinCache',

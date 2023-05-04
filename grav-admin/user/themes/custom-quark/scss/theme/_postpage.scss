@@ -1,3 +1,36 @@
+$dark-brown: #76330A;
+
 span.blog-date {
     display: none;
+}
+
+.content-item h3.p-name {
+    font-size: 2.4rem;
+    color: $dark-brown;
+
+    a,
+    a:visited {
+        color: $dark-brown;
+    }
+}
+
+.content-item .e-content p > a {
+    color: $dark-brown;
+}
+
+#item.extra-spacing .content-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.prev-next a.btn,
+.story-link a.btn {
+    color: $dark-brown;
+    border: 0.05rem solid $dark-brown;
+}
+
+.story-link a.btn:hover,
+.prev-next a.btn:hover {
+    background: lighten($dark-brown, 60%);
 }

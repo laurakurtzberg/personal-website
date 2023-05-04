@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/plugins/admin/languages/en.yaml',
-    'modified' => 1676831746,
-    'size' => 63492,
+    'modified' => 1679495310,
+    'size' => 63562,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_NOSCRIPT_MSG' => 'Please enable JavaScript in your browser.',
@@ -446,6 +446,8 @@ return [
             'LOG_HANDLER_HELP' => 'Where to output the logs',
             'SYSLOG_FACILITY' => 'Syslog facility',
             'SYSLOG_FACILITY_HELP' => 'Syslog facility for output',
+            'SYSLOG_TAG' => 'Syslog tag',
+            'SYSLOG_TAG_HELP' => 'Syslog tag for output',
             'DEBUGGER' => 'Debugger',
             'DEBUGGER_HELP' => 'Enable Grav debugger and following settings',
             'DEBUG_TWIG' => 'Debug Twig',
