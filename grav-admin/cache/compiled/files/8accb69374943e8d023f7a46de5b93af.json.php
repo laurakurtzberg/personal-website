@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1683166338,
+    'modified' => 1683235181,
     'size' => 2287,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1683166338,
+        'timestamp' => 1683235181,
         'count' => 10,
         'index' => [
             '' => [
@@ -69,13 +69,13 @@ return [
                 'key' => 'home/calculadoradecarbono',
                 'storage_key' => '01.home/calculadoradecarbono',
                 'template' => 'item',
-                'storage_timestamp' => 1683166223,
+                'storage_timestamp' => 1683235181,
                 'markdown' => [
                     '' => [
-                        'item' => 1683166223
+                        'item' => 1683235181
                     ]
                 ],
-                'checksum' => 'f72cf250a10bd7859bf713c0f3bf8e19'
+                'checksum' => 'a12e0ea5cf6737e8e757e35110ee0972'
             ],
             '01.home/chartered' => [
                 'key' => 'home/chartered',

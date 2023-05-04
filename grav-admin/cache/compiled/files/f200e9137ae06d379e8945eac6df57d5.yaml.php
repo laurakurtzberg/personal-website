@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/data/feed/200ceb26807d6bf99fd6f4f0d1ca54d4.yaml',
-    'modified' => 1683164952,
+    'modified' => 1683234232,
     'size' => 1734,
     'data' => [
-        'last_checked' => 1683164952,
+        'last_checked' => 1683234232,
         'data' => [
             0 => [
                 'title' => 'macOS 13.0 Ventura Apache Setup: Upgrading Homebrew',

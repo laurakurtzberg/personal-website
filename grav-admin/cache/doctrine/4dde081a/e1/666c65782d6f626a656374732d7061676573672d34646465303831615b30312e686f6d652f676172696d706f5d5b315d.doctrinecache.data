@@ -1,5 +1,0 @@
-1683165551
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:12:"home/garimpo";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:11:"Gold Mining";s:4:"link";s:88:"https://infoamazonia.org/2021/10/22/cooperativa-garimpeira-maiores-mineradoras-amazonia/";s:8:"subtitle";s:83:"Mapping the effect of fast-growing gold mining cooperatives in the Brazilian Amazon";s:5:"tools";s:15:"Mapbox.GL, QGIS";}s:11:"frontmatter";s:230:"title: Gold Mining
-link: https://infoamazonia.org/2021/10/22/cooperativa-garimpeira-maiores-mineradoras-amazonia/
-subtitle: Mapping the effect of fast-growing gold mining cooperatives in the Brazilian Amazon
-tools: Mapbox.GL, QGIS";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:12:"home/garimpo";s:11:"storage_key";s:15:"01.home/garimpo";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1683163274;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1683163274;}}s:8:"checksum";s:32:"1fe93b29c31a2a0f290b4a351c13afb7";}}
