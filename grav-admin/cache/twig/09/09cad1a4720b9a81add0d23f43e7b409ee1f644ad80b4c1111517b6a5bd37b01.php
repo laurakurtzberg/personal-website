@@ -34,28 +34,19 @@ class __TwigTemplate_791145791d540971859c1fa9787ca0a61daef7b123a3c522f90c8810568
             echo "    <";
             echo twig_escape_filter($this->env, ($context["title_level"] ?? null), "html", null, true);
             echo " class=\"p-name mt-1\">
-        ";
+        <a href=\"";
             // line 4
-            if ( !($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === false)) {
-                // line 5
-                echo "        <a href=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", []), "html", null, true);
-                echo "\"><i class=\"fa fa-angle-double-right u-url\"></i></a>
-        ";
-            }
-            // line 7
-            echo "        <a href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "link", []), "html", null, true);
             echo "\" class=\"u-url\">";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
             echo "</a>
     </";
-            // line 8
+            // line 5
             echo twig_escape_filter($this->env, ($context["title_level"] ?? null), "html", null, true);
             echo ">
 ";
         } else {
-            // line 10
+            // line 7
             echo "    <";
             echo twig_escape_filter($this->env, ($context["title_level"] ?? null), "html", null, true);
             echo " class=\"p-name mt-1\"><a href=\"";
@@ -81,7 +72,7 @@ class __TwigTemplate_791145791d540971859c1fa9787ca0a61daef7b123a3c522f90c8810568
 
     public function getDebugInfo()
     {
-        return array (  59 => 10,  54 => 8,  47 => 7,  41 => 5,  39 => 4,  34 => 3,  32 => 2,  30 => 1,);
+        return array (  50 => 7,  45 => 5,  39 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -97,9 +88,6 @@ class __TwigTemplate_791145791d540971859c1fa9787ca0a61daef7b123a3c522f90c8810568
         return new Source("{% set title_level = title_level ?: 'h2' %}
 {% if page.header.link %}
     <{{ title_level }} class=\"p-name mt-1\">
-        {% if page.header.continue_link is not same as(false) %}
-        <a href=\"{{ page.url }}\"><i class=\"fa fa-angle-double-right u-url\"></i></a>
-        {% endif %}
         <a href=\"{{ page.header.link }}\" class=\"u-url\">{{ page.title }}</a>
     </{{ title_level }}>
 {% else %}

@@ -1,7 +1,0 @@
-1683235537
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:14:"home/chartered";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:9:"Chartered";s:10:"story_link";s:63:"https://chartered.wlrn.org/charter-schools-network-connections/";s:8:"subtitle";s:100:"A network diagram to accompany a story on Florida's first private takeover of a public school system";s:5:"tools";s:5:"D3.js";}s:11:"frontmatter";s:216:"title: Chartered
-story_link: https://chartered.wlrn.org/charter-schools-network-connections/
-subtitle: A network diagram to accompany a story on Florida's first private takeover of a public school system
-tools: D3.js";s:8:"markdown";s:323:"Made in partnership with WLRN, the local radio station in Miami, FL, this network diagram plotted the connections between various charter schools, school boards, and local politicians to uncover the story behind Florida's first all-charter school district in rural Jefferson County.
-
-![chartered](chartered.png "chartered")";}s:7:"storage";a:6:{s:3:"key";s:14:"home/chartered";s:11:"storage_key";s:17:"01.home/chartered";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1683166255;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1683166255;}}s:8:"checksum";s:32:"58ca2d58d6f637bb58c7de8cb998a181";}}

@@ -1,0 +1,12 @@
+1683757952
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:25:"home/calculadoradecarbono";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:16:"Carbon Footprint";s:10:"story_link";s:53:"https://www.nationalgeographicla.com/loquehacescuenta";s:8:"subtitle";s:67:"A carbon footprint calculator for National Geographic Latin America";s:5:"tools";s:18:"Vanilla JavaScript";}s:11:"frontmatter";s:201:"title: 'Carbon Footprint'
+story_link: 'https://www.nationalgeographicla.com/loquehacescuenta'
+subtitle: 'A carbon footprint calculator for National Geographic Latin America'
+tools: 'Vanilla JavaScript'";s:8:"markdown";s:1029:"I developed the code for a carbon footprint calculator in vanilla JavaScript as a tool to be embedded in a special website for National Geographic's #LoQueHacesImporta digital campaign. This project was a collaboration with Ambiental Media and Grande Circular design studio and was implemented in four countries: Argentina, Brasil, Colombia and Mexico. The calculator itself is available in both Spanish and Portuguese, and creates a custom comparison page for the user to share on social media, comparing their carbon footprint to their country's national average. 
+
+The Ambiental Media team researched the impact of many everyday activities, including food choices, transportation, and planting trees. The calculator also takes socioeconomic factors into account, like income and country of residence. 
+
+Overall, the goal of this project was to encourage National Geographic's audience in Latin America to take action to lower their carbon footprint.
+
+
+![calculadora8-screens](calculadora8-screens.png "calculadora de carbono")";}s:7:"storage";a:6:{s:3:"key";s:25:"home/calculadoradecarbono";s:11:"storage_key";s:28:"01.home/calculadoradecarbono";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1683305518;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1683305518;}}s:8:"checksum";s:32:"2e44741e4b803fa88cb48347d3394cde";}}

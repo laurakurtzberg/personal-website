@@ -11,4 +11,5 @@ The Ambiental Media team researched the impact of many everyday activities, incl
 
 Overall, the goal of this project was to encourage National Geographic's audience in Latin America to take action to lower their carbon footprint.
 
-![Calculadora-Framed-3](Calculadora-Framed-3.png "Calculadora-Framed")
+
+![calculadora8-screens](calculadora8-screens.png "calculadora de carbono")

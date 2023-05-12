@@ -1,6 +1,0 @@
-1683235523
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:14:"home/aquazonia";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:10:"Aquazônia";s:10:"story_link";s:37:"https://aquazonia.ambiental.media/en/";s:8:"subtitle";s:74:"Quantifying and mapping harms to the planet’s largest hydrographic basin";}s:11:"frontmatter";s:156:"title: Aquazônia
-story_link: 'https://aquazonia.ambiental.media/en/'
-subtitle: 'Quantifying and mapping harms to the planet’s largest hydrographic basin'";s:8:"markdown";s:544:"Deforestation and fire have been the main symbols of destruction in the Amazon Rainforest. But do we understand the accumulated effects of human activities on the forest’s rivers, lakes and floodplains? What are the greatest threats to the dynamics of the water inside the planet’s largest hydrographic basin? Based on the best scientific data available, the unprecedented Amazon Water Impact Index draws together monitoring and research data to identify the most vulnerable areas of the rainforest.
-
-![aquazonia](aquazonia.png "aquazonia")";}s:7:"storage";a:6:{s:3:"key";s:14:"home/aquazonia";s:11:"storage_key";s:17:"01.home/aquazonia";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1683165928;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1683165928;}}s:8:"checksum";s:32:"44b6076f3b3d45451825f76b6b316ef5";}}

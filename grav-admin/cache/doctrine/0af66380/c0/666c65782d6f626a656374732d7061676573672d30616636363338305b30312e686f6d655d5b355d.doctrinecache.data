@@ -1,0 +1,15 @@
+1683756741
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:4:"Home";s:12:"show_sidebar";b:0;s:15:"show_pagination";b:0;s:7:"content";a:1:{s:5:"items";s:14:"@self.children";}}s:11:"frontmatter";s:91:"title: Home
+show_sidebar: false
+show_pagination: false
+content:
+    items: '@self.children'";s:8:"markdown";s:670:"Laura Kurtzberg
+===============
+
+Hi, I'm an **information designer** and **cartographer**. I make interactive maps, data visualizations, and web applications
+for news and storytelling. I often work closely with journalists and scientists to create stories with an environmental
+focus. My work has been published on [Ambiental Media](https://ambiental.media/en/15627-2/), [InfoAmazonia](https://infoamazonia.org/), and [Mongabay](https://www.mongabay.com/).
+
+I am also a Professor of Practice at Florida International University's [School of Journalism & Media](https://carta.fiu.edu/journalism/) in Miami, FL,
+where I teach courses on data visualization and technology.
+";}s:7:"storage";a:7:{s:3:"key";s:4:"home";s:11:"storage_key";s:7:"01.home";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1683152595;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1682632796;}}s:8:"children";a:7:{s:9:"aquazonia";b:0;s:4:"aves";b:0;s:20:"calculadoradecarbono";b:0;s:9:"chartered";b:0;s:6:"fumaca";b:0;s:7:"garimpo";b:0;s:9:"indigenas";b:0;}s:8:"checksum";s:32:"5d67c00adbec2e8d115c8a32c7632b9a";}}

@@ -922,6 +922,7 @@ html {
 .header-fixed section#body-wrapper {
   display: flex;
   background-color: #fff1e6;
+  background: linear-gradient(156deg, rgb(255, 241, 230) 53%, rgb(226, 236, 193) 100%);
   padding-bottom: 2rem;
 }
 .header-fixed section#body-wrapper .container {
@@ -941,10 +942,11 @@ html {
 section.aboutme {
   min-height: 400px;
   height: 80%;
-  min-width: 200px;
+  min-width: 250px;
   padding: 20px;
   padding-top: 0;
-  max-width: 35%;
+  width: 40%;
+  max-width: 300px;
   background: #e2ac87;
   border-radius: 0.1rem;
   text-align: center;
@@ -972,7 +974,7 @@ section.aboutme p {
 }
 @media (max-width: 840px) {
   section.aboutme {
-    max-width: 50%;
+    width: 50%;
   }
 }
 @media (max-width: 600px) {
@@ -990,7 +992,7 @@ section.aboutme .mypic-container {
   background-image: url("../images/LaurasPortrait2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 @media (max-width: 600px) {
   section.aboutme .mypic-container {
@@ -1007,6 +1009,7 @@ section.aboutme .mypic-container {
 
 .blog-listing .bricklayer-column {
   padding-left: 25px;
+  padding-right: 0;
   padding-right: 0;
 }
 @media (max-width: 600px) {
@@ -1025,6 +1028,34 @@ section.navbar-container {
 
 .mobile-menu .button_container span {
   height: 3px;
+}
+
+#second-body-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 57px);
+  background-color: #fff1e6;
+  background: linear-gradient(156deg, rgb(255, 241, 230) 53%, rgb(226, 236, 193) 100%);
+  padding: 4rem 1rem 2rem 1rem;
+}
+#second-body-wrapper h1 {
+  margin-top: 1rem;
+}
+#second-body-wrapper .container {
+  padding: 0;
+}
+@media (max-width: 600px) {
+  #second-body-wrapper .container {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 600px) {
+  #second-body-wrapper {
+    flex-direction: column;
+  }
+  #second-body-wrapper section.aboutme {
+    display: none;
+  }
 }
 
 span.blog-date {
@@ -1056,7 +1087,9 @@ span.blog-date {
 }
 
 .story-link a.btn:hover,
-.prev-next a.btn:hover {
+.story-link a.btn:active,
+.prev-next a.btn:hover,
+.prev-next a.btn:active {
   background: #f9d1b9;
 }
 
@@ -1074,6 +1107,31 @@ span.blog-date {
 
 .card-footer {
   padding: 0;
+}
+
+#second-body-wrapper .full-width {
+  padding: 0 10px 0 30px;
+}
+#second-body-wrapper .columns {
+  width: 100%;
+  padding: 0 10px 0 30px;
+}
+@media (max-width: 600px) {
+  #second-body-wrapper .columns {
+    padding: 0;
+    margin: 0;
+  }
+}
+#second-body-wrapper .columns .card {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 6px;
+}
+@media (max-width: 600px) {
+  #second-body-wrapper .columns .card {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

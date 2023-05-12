@@ -10,6 +10,7 @@ html {
 .header-fixed section#body-wrapper {
     display: flex;
     background-color: $washed-out-caramel;
+    background: linear-gradient(156deg, rgba(255, 241, 230, 1) 53%, rgba(226, 236, 193, 1) 100%);
     padding-bottom: 2rem;
 
     .container {
@@ -29,10 +30,11 @@ html {
 section.aboutme {
     min-height: 400px;
     height: 80%;
-    min-width: 200px;
+    min-width: 250px;
     padding: 20px;
     padding-top: 0;
-    max-width: 35%;
+    width: 40%;
+    max-width: 300px;
     background: darken($peachy-orange, 2%);
     border-radius: 0.1rem;
     text-align: center;
@@ -61,7 +63,7 @@ section.aboutme {
     }
 
     @include breakpoint(md) {
-        max-width: 50%;
+        width: 50%;
     }
 
     @include breakpoint(sm) {
@@ -78,7 +80,7 @@ section.aboutme {
         background-image: url('../images/LaurasPortrait2.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
 
         @include breakpoint(sm) {
             float: none;
@@ -94,6 +96,7 @@ section.aboutme {
 
 .blog-listing .bricklayer-column {
     padding-left: 25px;
+    padding-right: 0;
     padding-right: 0;
 
     @include breakpoint(sm) {
@@ -111,4 +114,33 @@ section.navbar-container {
 
 .mobile-menu .button_container span {
     height: 3px;
+}
+
+#second-body-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 57px);
+    background-color: $washed-out-caramel;
+    background: linear-gradient(156deg, rgba(255, 241, 230, 1) 53%, rgba(226, 236, 193, 1) 100%);
+    padding: 4rem 1rem 2rem 1rem;
+
+    h1 {
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 0;
+
+        @include breakpoint(sm) {
+            padding: 2rem 0;
+        }
+    }
+
+    @include breakpoint(sm) {
+        flex-direction: column;
+
+        section.aboutme {
+            display: none;
+        }
+    }
 }

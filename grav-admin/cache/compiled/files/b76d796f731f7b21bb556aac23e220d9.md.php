@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/pages/01.home/garimpo/item.md',
-    'modified' => 1683165888,
-    'size' => 248,
+    'modified' => 1683583855,
+    'size' => 272,
     'data' => [
         'header' => [
             'title' => 'Gold Mining',
@@ -15,6 +15,9 @@ return [
 story_link: https://infoamazonia.org/2021/10/22/cooperativa-garimpeira-maiores-mineradoras-amazonia/
 subtitle: Mapping the effect of fast-growing gold mining cooperatives in the Brazilian Amazon
 tools: Mapbox.GL, QGIS',
-        'markdown' => ''
+        'markdown' => 'Gold Mining
+===========
+
+'
     ]
 ];

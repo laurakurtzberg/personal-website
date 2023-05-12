@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/themes/quark/languages.yaml',
-    'modified' => 1683165739,
-    'size' => 7335,
+    'modified' => 1683757532,
+    'size' => 7342,
     'data' => [
         'en' => [
             'THEME_QUARK' => [
@@ -15,7 +15,7 @@ return [
                         'CONTINUE_READING' => 'Continue reading...',
                         'NEXT_POST' => 'Previous Project',
                         'PREV_POST' => 'Next Project',
-                        'READ_STORY' => 'Read the Story'
+                        'READ_STORY' => 'Check out the project'
                     ]
                 ],
                 'SIDEBAR' => [

@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/pages/01.home/calculadoradecarbono/item.md',
-    'modified' => 1683235181,
-    'size' => 1237,
+    'modified' => 1683305518,
+    'size' => 1240,
     'data' => [
         'header' => [
             'title' => 'Carbon Footprint',
@@ -21,6 +21,7 @@ The Ambiental Media team researched the impact of many everyday activities, incl
 
 Overall, the goal of this project was to encourage National Geographic\'s audience in Latin America to take action to lower their carbon footprint.
 
-![Calculadora-Framed-2](Calculadora-Framed-2.png "Calculadora-Framed-2")'
+
+![calculadora8-screens](calculadora8-screens.png "calculadora de carbono")'
     ]
 ];

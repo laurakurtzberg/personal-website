@@ -31,6 +31,8 @@ span.blog-date {
 }
 
 .story-link a.btn:hover,
-.prev-next a.btn:hover {
+.story-link a.btn:active,
+.prev-next a.btn:hover,
+.prev-next a.btn:active {
     background: lighten($dark-brown, 60%);
 }

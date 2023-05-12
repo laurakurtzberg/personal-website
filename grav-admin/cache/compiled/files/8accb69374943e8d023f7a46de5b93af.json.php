@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/Users/laurak/Documents/personal-website/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1683235181,
-    'size' => 2287,
+    'modified' => 1683758771,
+    'size' => 3077,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1683235181,
-        'count' => 10,
+        'timestamp' => 1683758771,
+        'count' => 13,
         'index' => [
             '' => [
                 'key' => '',
@@ -45,49 +45,49 @@ return [
                 'key' => 'home/aquazonia',
                 'storage_key' => '01.home/aquazonia',
                 'template' => 'item',
-                'storage_timestamp' => 1683165928,
+                'storage_timestamp' => 1683757634,
                 'markdown' => [
                     '' => [
-                        'item' => 1683165928
+                        'item' => 1683757634
                     ]
                 ],
-                'checksum' => '44b6076f3b3d45451825f76b6b316ef5'
+                'checksum' => 'bc31b3485f72b793061d0ae52f4fd16b'
             ],
             '01.home/aves' => [
                 'key' => 'home/aves',
                 'storage_key' => '01.home/aves',
                 'template' => 'item',
-                'storage_timestamp' => 1683165949,
+                'storage_timestamp' => 1683757457,
                 'markdown' => [
                     '' => [
-                        'item' => 1683165949
+                        'item' => 1683757351
                     ]
                 ],
-                'checksum' => '439ae16a58702728a1505347d9487372'
+                'checksum' => 'c225bf8ca7b6f69bc96d8a8ab4d702cb'
             ],
             '01.home/calculadoradecarbono' => [
                 'key' => 'home/calculadoradecarbono',
                 'storage_key' => '01.home/calculadoradecarbono',
                 'template' => 'item',
-                'storage_timestamp' => 1683235181,
+                'storage_timestamp' => 1683305518,
                 'markdown' => [
                     '' => [
-                        'item' => 1683235181
+                        'item' => 1683305518
                     ]
                 ],
-                'checksum' => 'a12e0ea5cf6737e8e757e35110ee0972'
+                'checksum' => '2e44741e4b803fa88cb48347d3394cde'
             ],
             '01.home/chartered' => [
                 'key' => 'home/chartered',
                 'storage_key' => '01.home/chartered',
                 'template' => 'item',
-                'storage_timestamp' => 1683166255,
+                'storage_timestamp' => 1683758771,
                 'markdown' => [
                     '' => [
-                        'item' => 1683166255
+                        'item' => 1683758771
                     ]
                 ],
-                'checksum' => '58ca2d58d6f637bb58c7de8cb998a181'
+                'checksum' => '27dc53a506b4a3980dc95c33a6b72284'
             ],
             '01.home/fumaca' => [
                 'key' => 'home/fumaca',
@@ -105,37 +105,78 @@ return [
                 'key' => 'home/garimpo',
                 'storage_key' => '01.home/garimpo',
                 'template' => 'item',
-                'storage_timestamp' => 1683165888,
+                'storage_timestamp' => 1683583855,
                 'markdown' => [
                     '' => [
-                        'item' => 1683165888
+                        'item' => 1683583855
                     ]
                 ],
-                'checksum' => '68b1414b0debac3e2df84e06b421f7c9'
+                'checksum' => '48068ace5b0395a65a484f52127fe290'
             ],
             '01.home/indigenas' => [
                 'key' => 'home/indigenas',
                 'storage_key' => '01.home/indigenas',
                 'template' => 'item',
-                'storage_timestamp' => 1683165899,
+                'storage_timestamp' => 1683756485,
                 'markdown' => [
                     '' => [
-                        'item' => 1683165899
+                        'item' => 1683756147
                     ]
                 ],
-                'checksum' => '34c1ef7f5df91cc1f00bd5543666a261'
+                'checksum' => '521c662df4643a8c6776bfd41804efe2'
             ],
             '02.courses' => [
                 'key' => 'courses',
                 'storage_key' => '02.courses',
-                'template' => 'default',
-                'storage_timestamp' => 1683163855,
+                'template' => 'coursepage',
+                'storage_timestamp' => 1683749433,
                 'markdown' => [
                     '' => [
-                        'default' => 1683163855
+                        'coursepage' => 1683749433
                     ]
                 ],
-                'checksum' => '22f9cbf0849ca9cda9b16285013c24b3'
+                'children' => [
+                    'data-viz' => 1683668237,
+                    'intro-to-media' => 1683671151,
+                    'web-production' => 1683671548
+                ],
+                'checksum' => '30a972b2ce89f54b02a37a2d29e7ad69'
+            ],
+            '02.courses/data-viz' => [
+                'key' => 'courses/data-viz',
+                'storage_key' => '02.courses/data-viz',
+                'template' => 'item',
+                'storage_timestamp' => 1683668237,
+                'markdown' => [
+                    '' => [
+                        'item' => 1683668237
+                    ]
+                ],
+                'checksum' => 'fa7cb5a2d1562ce50e0d98b7fc4a83f2'
+            ],
+            '02.courses/intro-to-media' => [
+                'key' => 'courses/intro-to-media',
+                'storage_key' => '02.courses/intro-to-media',
+                'template' => 'item',
+                'storage_timestamp' => 1683671151,
+                'markdown' => [
+                    '' => [
+                        'item' => 1683671151
+                    ]
+                ],
+                'checksum' => '9efed438beb0820e4f926bc3081cfe1a'
+            ],
+            '02.courses/web-production' => [
+                'key' => 'courses/web-production',
+                'storage_key' => '02.courses/web-production',
+                'template' => 'item',
+                'storage_timestamp' => 1683671548,
+                'markdown' => [
+                    '' => [
+                        'item' => 1683671548
+                    ]
+                ],
+                'checksum' => 'a5bd4bfc0b405e51b91a6778572d30a6'
             ]
         ]
     ]

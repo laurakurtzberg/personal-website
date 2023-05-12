@@ -1,10 +1,12 @@
 ---
 title: Chartered
-story_link: https://chartered.wlrn.org/charter-schools-network-connections/
-subtitle: A network diagram to accompany a story on Florida's first private takeover of a public school system
+story_link: 'https://chartered.wlrn.org/'
+subtitle: 'A network diagram to accompany a story on Florida''s first private takeover of a public school system'
 tools: D3.js
 ---
 
-Made in partnership with WLRN, the local radio station in Miami, FL, this network diagram plotted the connections between various charter schools, school boards, and local politicians to uncover the story behind Florida's first all-charter school district in rural Jefferson County.
+Made in partnership with WLRN, the local radio station in Miami, FL, this network diagram plots the connections between various charter schools, school boards, and local politicians to uncover the story behind Florida's first all-charter school district in rural Jefferson County.
 
-![chartered](chartered.png "chartered")
+I put together the network diagram itself with D3.js. It was published as an exploratory tool within the Chartered website. 
+
+![chartered6](chartered6.png "chartered6")

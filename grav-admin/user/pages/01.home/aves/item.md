@@ -1,7 +1,7 @@
 ---
 title: Aves
-story_link: http://laurajael.com/RAS-prototypes/Fichas/fichas.html
-subtitle: Interactive Cards to explore bird species and their reponse to forest degradation. 
+story_link: 'http://laurajael.com/RAS-prototypes/Fichas/fichas.html'
+subtitle: 'Interactive Cards to explore bird species and their reponse to forest degradation.'
 tools: D3.js
 ---
 
@@ -11,4 +11,4 @@ That paper was titled ["Anthropogenic disturbance in tropical forests can double
 
 For the "Aves" cards, I focused on birds, specifically. The line charts plot the odds of detection of that particular bird species by the percentage of the forest cover that is degraded. Values near 0 indicate resistance to change, which values near -1 or +1 indicate larger odds of being detected at an extreme. An illustation of the bird and a recording of its birdsong is included on each card.  
 
-![aves](aves2.png "aves")
+![birds-aves](birds-aves.png "birds-aves")
